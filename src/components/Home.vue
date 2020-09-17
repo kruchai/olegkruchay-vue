@@ -1,32 +1,40 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="container">
+    <Header
+      :status="header.status"
+      :uri="header.link.uri"
+      :title="header.link.title"
+    />
+    <Main :msg="main.msg" />
+    <Footer :copyright="footer.copyright" />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
-</script>
+import Header from "./Layout/Header";
+import Main from "./Layout/Main";
+import Footer from "./Layout/Footer";
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+export default {
+  name: "Home",
+  components: { Footer, Header, Main },
+  data() {
+    return {
+      header: {
+        status: "βeta",
+        link: {
+          uri: "#",
+          title: "about me"
+        }
+      },
+      main: {
+        greeting: "Hey, it's Oleg 👋",
+        message: "I'm a front-end web developer"
+      },
+      footer: {
+        copyright: "olegkruchay.com 2020"
+      }
+    };
+  }
+};
+</script>
