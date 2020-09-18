@@ -2,10 +2,17 @@
   <div class="container">
     <Header
       :status="header.status"
-      :uri="header.link.uri"
-      :title="header.link.title"
+      :aboutUri="header.aboutLink.aboutLinkUri"
+      :aboutTitle="header.aboutLink.aboutLinkTitle"
     />
-    <Main :msg="main.msg" />
+    <Main
+      :greeting="main.greeting"
+      :message="main.message"
+      :cvLinkUri="main.cvLink.cvLinkUri"
+      :cvLinkTitle="main.cvLink.cvLinkTitle"
+      :contactLinkUri="main.contactLink.contactLinkUri"
+      :contactLinkTitle="main.contactLink.contactLinkTitle"
+    />
     <Footer :copyright="footer.copyright" />
   </div>
 </template>
@@ -22,17 +29,25 @@ export default {
     return {
       header: {
         status: "βeta",
-        link: {
-          uri: "#",
-          title: "about me"
+        aboutLink: {
+          aboutLinkUri: "#",
+          aboutLinkTitle: "about me"
         }
       },
       main: {
-        greeting: "Hey, it's Oleg 👋",
-        message: "I'm a front-end web developer"
+        greeting: 'Hey, it\'s Oleg',
+        message: 'I\'m a front-end web developer',
+        cvLink: {
+          cvLinkUri: '#',
+          cvLinkTitle: 'Download my cv'
+        },
+        contactLink: {
+          contactLinkUri: '#',
+          contactLinkTitle: 'Contact me'
+        }
       },
       footer: {
-        copyright: "olegkruchay.com 2020"
+        copyright: 'olegkruchay.com'
       }
     };
   }
