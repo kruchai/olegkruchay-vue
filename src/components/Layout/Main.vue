@@ -3,7 +3,7 @@
     <!--  Cell 1  -->
     <div class="cell first">
       <div class="hello">
-        {{ greeting }}
+        {{ greeting }} &#x1F44B;
       </div>
       <div class="who-i-am">
         {{ message }}
@@ -11,22 +11,22 @@
 
       <div class="cv-container">
         <div class="download-cv">
-          <button class="cta">
+          <a :href="cvLinkUri" class="cta">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
             <span class="button-text">
-              Download my CV
+              {{ cvLinkTitle }}
             </span>
-          </button>
+          </a>
         </div>
         <div class="message-me">
-          <button class="cta">
+          <a :href="contactLinkUri" class="cta">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Message me</span>
-          </button>
+            <span class="button-text">{{ contactLinkTitle }}</span>
+          </a>
         </div>
       </div>
     </div>
@@ -38,7 +38,11 @@ export default {
   name: "Main",
   props: {
     greeting: String,
-    message: String
+    message: String,
+    cvLinkUri: String,
+    cvLinkTitle: String,
+    contactLinkUri: String,
+    contactLinkTitle: String
   }
 };
 </script>

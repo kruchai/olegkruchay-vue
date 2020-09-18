@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <!--  Cell 1  -->
-    <div class="cell first">&copy; {{ copyright }}</div>
+    <div class="cell first">&copy; {{ copyright }} {{ new Date().getFullYear() }}</div>
 
     <!--  Cell 2  -->
     <div class="cell second">
