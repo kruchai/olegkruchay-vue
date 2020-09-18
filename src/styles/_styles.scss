@@ -231,6 +231,8 @@ a {
     img {
       width: 100%;
       max-width: calc(80vw);
+      display: flex;
+      align-self: flex-end;
     }
   }
   
