@@ -13,7 +13,7 @@
 
     <!--  Cell 3  -->
     <div class="cell third">
-      <a :href="uri">{{ title }}</a>
+      <a :href="aboutUri">{{ aboutTitle }}</a>
     </div>
   </header>
 </template>
@@ -23,8 +23,8 @@ export default {
   name: "Header",
   props: {
     status: String,
-    title: String,
-    uri: String
+    aboutTitle: String,
+    aboutUri: String
   }
 };
 </script>
