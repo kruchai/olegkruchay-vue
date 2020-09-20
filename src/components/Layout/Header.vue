@@ -1,10 +1,10 @@
 <template>
-  <header class="header">
+  <header class="v-header">
     <!--  Cell 1  -->
-    <div class="cell first">{{ status }}</div>
+    <div class="v-cell first">{{ status }}</div>
 
     <!--  Cell 2  -->
-    <div class="cell second">
+    <div class="v-cell second">
       <a href="/" class="logo">
         <span>o</span>
         <span>k</span>
@@ -12,8 +12,11 @@
     </div>
 
     <!--  Cell 3  -->
-    <div class="cell third">
-      <a :href="aboutUri">{{ aboutTitle }}</a>
+    <div class="v-cell third">
+      <a class="about-me" :href="aboutUri">
+        <span class="v-hide mobile">{{ aboutTitle }}</span>
+        <span class="v-show mobile">i</span>
+      </a>
     </div>
   </header>
 </template>
