@@ -1,7 +1,7 @@
 <template>
-  <main class="main">
+  <main class="v-main">
     <!--  Cell 1  -->
-    <div class="cell first">
+    <div class="v-cell first">
       <div class="hello">
         {{ greeting }} &#x1F44B;
       </div>

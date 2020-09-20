@@ -1,17 +1,17 @@
 <template>
-  <footer class="footer">
+  <footer class="v-footer">
     <!--  Cell 1  -->
-    <div class="cell first">&copy; {{ copyright }} {{ new Date().getFullYear() }}</div>
+    <div class="v-cell first">&copy; {{ copyright }} {{ new Date().getFullYear() }}</div>
 
     <!--  Cell 2  -->
-    <div class="cell second">
+    <div class="v-cell second">
       <div>Build on <a href="#">Vue</a>.</div>
       <div>Hosted on <a href="#">Netlify</a>.</div>
       <div>The code is open-source on <a href="#">Github</a>.</div>
     </div>
 
     <!--  Cell 3  -->
-    <div class="cell third">
+    <div class="v-cell third">
       <div class="social-networks">
         <img alt="Oleg Kruchay logo" src="../../assets/insta.png" />
         <img alt="Oleg Kruchay logo" src="../../assets/linkedin.png" />
