@@ -80,7 +80,7 @@ a {
   display: grid;
   grid-template-rows: 100px auto 250px;
   overflow-y: hidden;
-  z-index: 3;
+  z-index: 1;
   position: relative;
   
   @media (min-width: 851px) {
@@ -128,6 +128,8 @@ a {
 
 // basic
 .v-cell {
+  z-index: 3;
+  
   &.first {
     grid-area: first;
   }

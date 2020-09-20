@@ -2,30 +2,30 @@
   <main class="v-main">
     <!--  Cell 1  -->
     <div class="v-cell first">
-      <div class="hello">
-        {{ greeting }} &#x1F44B;
-      </div>
+      <div class="hello">{{ main.greeting }} &#x1F44B;</div>
       <div class="who-i-am">
-        {{ message }}
+        {{ main.message }}
       </div>
 
       <div class="cv-container">
         <div class="download-cv">
-          <a :href="cvLinkUri" class="cta">
+          <a :href="main.cvLink.cvLinkUri" class="cta">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
             <span class="button-text">
-              {{ cvLinkTitle }}
+              {{ main.cvLink.cvLinkTitle }}
             </span>
           </a>
         </div>
         <div class="message-me">
-          <a :href="contactLinkUri" class="cta">
+          <a :href="main.contactLink.contactLinkUri" class="cta">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">{{ contactLinkTitle }}</span>
+            <span class="button-text">{{
+              main.contactLink.contactLinkTitle
+            }}</span>
           </a>
         </div>
       </div>
@@ -34,15 +34,14 @@
 </template>
 
 <script>
+import { main } from '~/static/data/data.json'
+
 export default {
-  name: "Main",
-  props: {
-    greeting: String,
-    message: String,
-    cvLinkUri: String,
-    cvLinkTitle: String,
-    contactLinkUri: String,
-    contactLinkTitle: String
-  }
-};
+  name: 'Main',
+  data() {
+    return {
+      main,
+    }
+  },
+}
 </script>
