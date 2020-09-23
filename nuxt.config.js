@@ -12,6 +12,11 @@ export default {
     ]
   },
 
+  // Special for SPA mode on Netlify.
+  generate: {
+    fallback: true
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     '@/assets/styles/styles.scss'
