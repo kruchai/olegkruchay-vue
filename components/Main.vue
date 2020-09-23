@@ -1,0 +1,51 @@
+<template>
+  <main class="v-main">
+    <!--  Cell 1  -->
+    <div class="v-cell first">
+      <div class="hello">{{ main.greeting }} &#x1F44B;</div>
+      <div class="who-i-am">
+        {{ main.message }}
+      </div>
+
+      <div class="cv-container">
+        <div class="download-cv">
+          <a :href="main.cvLink.cvLinkUri" class="v-cta">
+            <span class="circle">
+              <span class="icon-wrapper">
+                <span class="icon download"></span>
+              </span>
+              <span class="button-text">
+                {{ main.cvLink.cvLinkTitle }}
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="message-me">
+          <a :href="main.contactLink.contactLinkUri" class="v-cta">
+            <span class="circle">
+              <span class="icon-wrapper">
+                <span class="icon letter"></span>
+              </span>
+              <span class="button-text">
+                {{ main.contactLink.contactLinkTitle }}
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</template>
+
+<script>
+import { main } from '~/static/data/data.json'
+
+export default {
+  name: 'Main',
+  data() {
+    return {
+      main,
+    }
+  },
+}
+</script>
