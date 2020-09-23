@@ -24,6 +24,17 @@
   font-family: 'Niconne', cursive;
 }
 
+// Variables.
+$white: #fff;
+$dark-mode: linear-gradient(to right, #414345, #232526);
+$grey-logo: #ddd;
+$grey-light: #999;
+$grey-middle: #777;
+$grey-lines: rgba(186, 186, 186, 0.5);
+$grey-main-cta: #555;
+$main: #F08080;
+$background-color: $white;
+
 * {
   box-sizing: border-box;
   &::before, &::after {
@@ -34,6 +45,7 @@
 body {
   margin: 0;
   font-family: 'Comfortaa', cursive;
+  background: $background-color;
 }
 
 a {
@@ -71,7 +83,7 @@ a {
     &:after {
       content: "";
       width: 70%;
-      background-color: #F08080;
+      background-color: $main;
     }
   }
 }
@@ -102,7 +114,7 @@ a {
 }
 
 .line {
-  border-right: 1px solid rgba(186,186,186,0.5);
+  border-right: 1px solid rgba(186, 186, 186, 0.5);
   transition: 1s ease-out;
   
   &:nth-child(2n) {
@@ -421,10 +433,7 @@ a {
   }
 }
 
-// Rewriting
-$white: #fff;
-$black: #555;
-
+// main cta
 .v-cta {
   position: relative;
   cursor: pointer;
@@ -451,11 +460,11 @@ $black: #555;
     .circle {
       &:before {
         width: 100%;
-        background-color: #F08080;
+        background-color: $main;
       }
 
       .button-text {
-        color: #ffffff;
+        color: $white;
       }
     }
 
@@ -468,7 +477,7 @@ $black: #555;
             left: calc(50% + 4px);
           }
           &:after {
-            background-color: #fff;
+            background-color: $white;
             width: 20px;
           }
         }
@@ -483,8 +492,7 @@ $black: #555;
           }
           &:after {
             background-color: transparent;
-            border-color: #fff;
-            //left: calc(50% + 4px);
+            border-color: $white;
           }
         }
       }
@@ -493,7 +501,6 @@ $black: #555;
 
   // static
   .circle {
-    //border: 1px solid #F08080;
     height: 48px;
     position: relative;
     display: flex;
@@ -527,8 +534,8 @@ $black: #555;
         left: calc(50% - 2px);
         width: 10px;
         height: 10px;
-        border-top: 2px solid #fff;
-        border-right: 2px solid #fff;
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
         transform: translate(-50%, -50%) rotate(45deg);
       }
 
@@ -576,7 +583,7 @@ $black: #555;
     display: inline-block;
     margin-left: 10px;
     padding: 0 48px 0 0;
-    color: $black;
+    color: $grey-main-cta;
     font-weight: 700;
     line-height: 48px;
     text-align: center;
