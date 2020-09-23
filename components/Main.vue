@@ -9,23 +9,27 @@
 
       <div class="cv-container">
         <div class="download-cv">
-          <a :href="main.cvLink.cvLinkUri" class="cta">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">
-              {{ main.cvLink.cvLinkTitle }}
+          <a :href="main.cvLink.cvLinkUri" class="v-cta">
+            <span class="circle">
+              <span class="icon-wrapper">
+                <span class="icon download"></span>
+              </span>
+              <span class="button-text">
+                {{ main.cvLink.cvLinkTitle }}
+              </span>
             </span>
           </a>
         </div>
         <div class="message-me">
-          <a :href="main.contactLink.contactLinkUri" class="cta">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
+          <a :href="main.contactLink.contactLinkUri" class="v-cta">
+            <span class="circle">
+              <span class="icon-wrapper">
+                <span class="icon letter"></span>
+              </span>
+              <span class="button-text">
+                {{ main.contactLink.contactLinkTitle }}
+              </span>
             </span>
-            <span class="button-text">{{
-              main.contactLink.contactLinkTitle
-            }}</span>
           </a>
         </div>
       </div>
