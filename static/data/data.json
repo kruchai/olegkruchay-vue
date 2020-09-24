@@ -3,12 +3,12 @@
     "status": "βeta",
     "aboutLink": {
       "aboutLinkUri": "#",
-      "aboutLinkTitle": "about me"
+      "aboutLinkTitle": "about"
     }
   },
   "main": {
     "greeting": "Hey, it's Oleg",
-    "message": "I'm a front-end web developer",
+    "message": "I'm creating the web interfaces",
     "cvLink": {
       "cvLinkUri": "#",
       "cvLinkTitle": "Download my cv"
@@ -20,5 +20,26 @@
   },
   "footer": {
     "copyright": "olegkruchay.com"
+  },
+  "contacts": {
+    "email": "o.kruchay@gmail.com",
+    "id": "olegkruchay"
+  },
+  "errors": {
+    "notFound": {
+      "heading": "Oops, error 404",
+      "description": "Page not found",
+      "code": "404"
+    },
+    "accessDenied": {
+      "heading": "Ohh, error 403",
+      "description": "Access denied",
+      "code": "403"
+    },
+    "node": {
+      "heading": "Ahaha, lol",
+      "description": "A ne Drupal'ist li ty chasom?",
+      "code": "L0L"
+    }
   }
 }
