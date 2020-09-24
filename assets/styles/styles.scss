@@ -258,9 +258,21 @@ body {
   
   .v-cell {
     color: #777;
+
+    &.first {
+      .v-link-header {
+        @media (max-width: 850px) {
+          .v-show {
+            &.mobile {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
   }
-  
-  .about-me {
+
+  .v-link-header {
     display: inline-block;
 
     @media (max-width: 850px) {
@@ -274,7 +286,7 @@ body {
           content: "i";
           font-family: 'Niconne', cursive;
           justify-content: center;
-          font-size: 40px;
+          font-size: 45px;
         }
       }
     }
@@ -489,7 +501,7 @@ a {
   text-decoration: none;
   background: transparent;
   padding: 0;
-  font-size: 1rem;
+  font-size: 14px;
   display: inline-block;
   width: 100%;
   max-width: 270px;
@@ -518,7 +530,7 @@ a {
     .icon-wrapper {
       .icon {
         &.download {
-          transform: translateX(10px) rotate(90deg);
+          transform: rotate(90deg);
 
           &:before {
             left: calc(50% + 4px);
@@ -530,7 +542,7 @@ a {
         }
 
         &.letter {
-          transform: translateX(10px) rotate(90deg);
+          transform: rotate(90deg);
 
           &:before {
             left: calc(50% - 6px);
@@ -540,6 +552,13 @@ a {
           &:after {
             background-color: transparent;
             border-color: $white;
+          }
+        }
+
+        @media (min-width: 851px) {
+          &.download,
+          &.letter {
+            transform: translateX(10px) rotate(90deg);
           }
         }
       }

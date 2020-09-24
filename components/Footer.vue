@@ -2,7 +2,7 @@
   <footer class="v-footer">
     <!--  Cell 4  -->
     <div class="v-cell fourth text-center">
-      <span>{{ 'v0.6' }}</span>
+      <span>{{ 'v0.6.2' }}</span>
       <span>
         {{ 'βeta' }}
       </span>
