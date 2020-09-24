@@ -21,7 +21,7 @@
           </a>
         </div>
         <div class="message-me">
-          <a :href="main.contactLink.contactLinkUri" class="v-cta">
+          <NuxtLink exact-active-class="v-link-active" to="/contacts" class="v-cta v-link">
             <span class="circle">
               <span class="icon-wrapper">
                 <span class="icon letter"></span>
@@ -30,7 +30,7 @@
                 {{ main.contactLink.contactLinkTitle }}
               </span>
             </span>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>

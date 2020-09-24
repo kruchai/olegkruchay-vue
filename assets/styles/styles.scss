@@ -48,10 +48,22 @@ body {
   background: $background-color;
 }
 
-a {
+.v-link {
   color: #999;
   position: relative;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    padding: 0 20px 0 10px;
+    background: linear-gradient(to right, $white, #eee);
+    border-radius: 0 0 10px;
+
+    &:before {
+      max-width: calc(100% - 30px);
+      left: 10px;
+    }
+  }
   
   &:before {
     content: "";
@@ -59,6 +71,7 @@ a {
     height: 1px;
     background-color: #999;
     position: absolute;
+    left: 0;
     bottom: 1px;
     transition: 1.3s cubic-bezier(0.65,0,.076,1)
   }
@@ -86,6 +99,13 @@ a {
       background-color: $main;
     }
   }
+
+  &.social {
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
 }
 
 .container {
@@ -94,9 +114,10 @@ a {
   overflow-y: hidden;
   z-index: 1;
   position: relative;
+  min-height: 100vh;
   
   @media (min-width: 851px) {
-    grid-template-rows: 100px calc(100vh - 200px) 100px;
+    grid-template-rows: 100px auto 100px;
   }
 }
 
@@ -105,11 +126,12 @@ a {
   display: grid;
   position: absolute;
   grid-template-columns: repeat(10, 1fr);
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
   animation-name: lines;
   animation-duration: 2s;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 2;
 }
 
@@ -219,7 +241,6 @@ a {
   }
 }
 
-
 // header
 .v-header {
   display: grid;
@@ -240,7 +261,14 @@ a {
   }
   
   .about-me {
+    display: inline-block;
+
     @media (max-width: 850px) {
+      &:before,
+      &:after {
+        content: none;
+      }
+
       .v-show {
         &.mobile {
           content: "i";
@@ -250,6 +278,20 @@ a {
         }
       }
     }
+  }
+}
+
+// main
+.v-section--main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: ". first first first first first first first first .";
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    grid-template-areas:
+      ". . . first first first first . . .";
   }
 }
 
@@ -270,33 +312,33 @@ a {
     grid-template-areas:
       ". . . first first first first . . .";
   }
-  
-  .v-cell {
-    color: #777;
-    
-    .hello {
-      font-family: 'Comfortaa', cursive;
-      font-weight: 300;
-      font-size: 30px;
-      margin-bottom: 25px;
-  
-      @media (min-width: 851px) {
-        font-size: 40px;
-      }
+}
+
+.v-cell {
+  color: #777;
+
+  .hello {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 25px;
+
+    @media (min-width: 851px) {
+      font-size: 40px;
     }
-    
-    .who-i-am {
-      font-size: 45px;
-      font-weight: bold;
-      font-family: 'Patua One', cursive;
-      line-height: 0.9;
-  
-      @media (min-width: 851px) {
-        font-size: 65px;
-      }
-      @media (min-width: 1200px) {
-        font-size: 75px;
-      }
+  }
+
+  .who-i-am {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Patua One', cursive;
+    line-height: 0.9;
+
+    @media (min-width: 851px) {
+      font-size: 65px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 75px;
     }
   }
 }
@@ -313,7 +355,7 @@ a {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      ". first first second second second second third third .";
+      "fourth first first second second second second third third .";
     position: relative;
     align-items: center;
   }
@@ -321,10 +363,11 @@ a {
   .v-cell {
     z-index: 3;
     color: #777;
+    font-size: 14px;
   
     &.first {
       color: #ccc;
-      font-size: 14px;
+      font-size: 13px;
   
       @media (max-width: 850px) {
         order: 3;
@@ -408,14 +451,18 @@ a {
   border: 1px solid;
   display: inline-block;
   text-align: center;
-  padding: 5px 7.5px;
+  padding: 0;
   border-radius: 25% 0 25% 0;
-  line-height: 1;
+  line-height: 54px;
   font-weight: 700;
   font-size: 40px;
+  height: 54px;
+  width: 54px;
   
   span {
-    margin-left: -3px;
+    &:last-child {
+      margin-left: -16px;
+    }
   }
 }
 
@@ -593,3 +640,11 @@ a {
   }
 }
 
+// back-to-home component.
+.back-to-home {
+  margin: 20px 0;
+}
+
+.text-center {
+  text-align: center;
+}

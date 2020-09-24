@@ -1,18 +1,13 @@
 <template>
-  <div class="container">
-    <AnimatedGrid />
-    <Header />
-    <Nuxt />
-    <Footer />
-  </div>
+  <ErrorComponent :statusCode="error.statusCode" />
 </template>
 
 <script>
-import AnimatedGrid from '../components/AnimatedGrid'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import ErrorComponent from '@/components/ErrorComponent'
 
 export default {
-  components: { AnimatedGrid, Footer, Header },
+  components: {ErrorComponent},
+  props: ['error'],
+  layout: 'default'
 }
 </script>

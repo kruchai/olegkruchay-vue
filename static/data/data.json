@@ -1,24 +1,58 @@
 {
+  "site": {
+    "version": "0.6.0",
+    "status": "βeta"
+  },
   "header": {
-    "status": "βeta",
     "aboutLink": {
-      "aboutLinkUri": "#",
-      "aboutLinkTitle": "about me"
+      "aboutLinkUri": "/about",
+      "aboutLinkTitle": "about"
+    },
+    "contactsLink": {
+      "contactsLinkUri": "/contacts",
+      "contactsLinkTitle": "contacts"
     }
   },
   "main": {
     "greeting": "Hey, it's Oleg",
-    "message": "I'm a front-end web developer",
+    "message": "I'm creating the web interfaces",
     "cvLink": {
-      "cvLinkUri": "#",
+      "cvLinkUri": "/cv.pdf",
       "cvLinkTitle": "Download my cv"
     },
     "contactLink": {
-      "contactLinkUri": "#",
+      "contactLinkUri": "/contacts",
       "contactLinkTitle": "Contact me"
     }
   },
   "footer": {
     "copyright": "olegkruchay.com"
+  },
+  "contacts": {
+    "email": "o.kruchay@gmail.com",
+    "id": "olegkruchay"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "greeting": "Hola ✌️",
+    "preStory": "My name is Oleg Kruchay. I'm front-end web developer. I need to teel you few words about me as professional in my sphere.",
+    "story": "I have been working as developer since 2016 ....."
+  },
+  "errors": {
+    "notFound": {
+      "heading": "Oops, error 404",
+      "description": "Page not found",
+      "code": "404"
+    },
+    "accessDenied": {
+      "heading": "Ohh, error 403",
+      "description": "Access denied",
+      "code": "403"
+    },
+    "node": {
+      "heading": "Ahaha, lol",
+      "description": "A ne Drupal'ist li ty chasom?",
+      "code": "L0L"
+    }
   }
 }
