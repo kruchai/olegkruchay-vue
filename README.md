@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.5 ßeta```
+###### 🎭🎲️ Current version ```v0.6.1 ßeta```
 
 ### 🔩🔧 Build Setup 
 
@@ -23,9 +23,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### 💎 Features 
 
-- Made on VueJS
+- Made on NuxtJS (VueJS)
 - 10-section based CSS Grid
 - Animations by CSS, AnimeJS
+- SSR
+- Error pages
+- Drupal error pages relations
+- The special pages: node/, node/1, admin/, user/
 
 #### 💣🧨 Features in future 
 
