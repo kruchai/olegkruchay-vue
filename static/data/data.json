@@ -1,20 +1,27 @@
 {
+  "site": {
+    "version": "0.6.0",
+    "status": "βeta"
+  },
   "header": {
-    "status": "βeta",
     "aboutLink": {
-      "aboutLinkUri": "#",
+      "aboutLinkUri": "/about",
       "aboutLinkTitle": "about"
+    },
+    "contactsLink": {
+      "contactsLinkUri": "/contacts",
+      "contactsLinkTitle": "contacts"
     }
   },
   "main": {
     "greeting": "Hey, it's Oleg",
     "message": "I'm creating the web interfaces",
     "cvLink": {
-      "cvLinkUri": "#",
+      "cvLinkUri": "/cv.pdf",
       "cvLinkTitle": "Download my cv"
     },
     "contactLink": {
-      "contactLinkUri": "#",
+      "contactLinkUri": "/contacts",
       "contactLinkTitle": "Contact me"
     }
   },
@@ -24,6 +31,12 @@
   "contacts": {
     "email": "o.kruchay@gmail.com",
     "id": "olegkruchay"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "greeting": "Hola ✌️",
+    "preStory": "My name is Oleg Kruchay. I'm front-end web developer. I need to teel you few words about me as professional in my sphere.",
+    "story": "I have been working as developer since 2016 ....."
   },
   "errors": {
     "notFound": {
