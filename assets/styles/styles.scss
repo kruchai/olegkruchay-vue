@@ -75,6 +75,32 @@ body {
   }
 
   &.social {
+    transition: none;
+    color: $grey-main-cta;
+    font-size: 22px;
+    padding: 0 5px;
+    
+    &:hover {
+      &.instagram {
+        color: #0d1a2b;
+      }
+      &.linkedin {
+        color: #0077b5;
+      }
+      &.facebook {
+        color: #3b5998;
+      }
+      &.drupal {
+        color: #0077c0;
+      }
+      &.codepen {
+        color: #00112c;
+      }
+      &.telegram {
+        color: #0088cc;
+      }
+    }
+    
     &:before,
     &:after {
       content: none;
@@ -403,18 +429,6 @@ body {
   
       @media (min-width: 851px) {
         max-width: 80vw;
-      }
-    }
-  }
-  
-  .social-networks {
-    img {
-      max-width: 20px;
-      margin-right: 10px;
-      filter: grayscale(1);
-      
-      &:hover {
-        filter: grayscale(0);
       }
     }
   }
