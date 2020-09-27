@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'project-nuxt',
+    title: 'Hey, I\'m Oleg 👋 Front-end web developer 👨🏻‍💻',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,10 +33,23 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Niconne: true,
+        Righteous: true,
+        'Patua+One': true,
+        Comfortaa: {
+          wght: [300, 400],
+        },
+      },
+      display: 'swap',
+      download: true,
+    }]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/robots',
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
