@@ -44,6 +44,19 @@ export default {
       },
       display: 'swap',
       download: true,
+    }],
+    ['@nuxtjs/fontawesome', {
+      component: 'fa',
+      icons: {
+        brands: [
+          'faInstagram',
+          'faFacebook',
+          'faCodepen',
+          'faDrupal',
+          'faLinkedin',
+          'faTelegram',
+        ]
+      }
     }]
   ],
 

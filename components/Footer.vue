@@ -2,7 +2,7 @@
   <footer class="v-footer">
     <!--  Cell 4  -->
     <div class="v-cell fourth text-center">
-      <span>{{ 'v0.6.2' }}</span>
+      <span>{{ 'v0.6.4' }}</span>
       <span>
         {{ 'βeta' }}
       </span>
@@ -23,20 +23,23 @@
     <!--  Cell 3  -->
     <div class="v-cell third">
       <div class="social-networks">
-        <a href="#" class="v-link social">
-          <img alt="instagram logo" src="@/assets/images/insta.png"/>
+        <a href="#" class="v-link social instagram">
+          <fa :icon="['fab', 'instagram']" />
         </a>
-        <a href="#" class="v-link social">
-          <img alt="linkedin logo" src="@/assets/images/linkedin.png"/>
+        <a href="#" class="v-link social linkedin">
+          <fa :icon="['fab', 'linkedin']" />
         </a>
-        <a href="#" class="v-link social">
-          <img alt="facebook logo" src="@/assets/images/facebook.png"/>
+        <a href="#" class="v-link social facebook">
+          <fa :icon="['fab', 'facebook']" />
         </a>
-        <a href="#" class="v-link social">
-          <img alt="drupal logo" src="@/assets/images/drupal.png"/>
+        <a href="#" class="v-link social drupal">
+          <fa :icon="['fab', 'drupal']" />
         </a>
-        <a href="#" class="v-link social">
-          <img alt="codepen logo" src="@/assets/images/codepen.png"/>
+        <a href="#" class="v-link social codepen">
+          <fa :icon="['fab', 'codepen']" />
+        </a>
+        <a href="#" class="v-link social telegram">
+          <fa :icon="['fab', 'telegram']" />
         </a>
 
       </div>
