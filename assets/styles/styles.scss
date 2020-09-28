@@ -99,6 +99,9 @@ body {
       &.telegram {
         color: #0088cc;
       }
+      &.skype {
+        color: #00aff0;
+      }
     }
     
     &:before,
@@ -329,7 +332,7 @@ body {
 .v-cell {
   color: #777;
 
-  .hello {
+  .v-title {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
     font-size: 30px;
@@ -340,7 +343,7 @@ body {
     }
   }
 
-  .who-i-am {
+  .v-heading {
     font-size: 45px;
     font-weight: bold;
     font-family: 'Patua One', cursive;

@@ -2,15 +2,15 @@
   <main class="v-section--main">
     <div class="v-cell first">
       <div v-if="statusCode === 404">
-        <span class="hello">{{ errors.notFound.heading }} 🗿</span>
+        <span class="v-title">{{ errors.notFound.heading }} 🗿</span>
         <h1>
-          <span class="who-i-am">{{ errors.notFound.description }}</span>
+          <span class="v-heading">{{ errors.notFound.description }}</span>
         </h1>
       </div>
       <div v-else>
-        <span class="hello">{{ heading }} 🐣</span>
+        <span class="v-title">{{ heading }} 🐣</span>
         <h1>
-          <span class="who-i-am">{{ description }}</span>
+          <span class="v-heading">{{ description }}</span>
         </h1>
       </div>
       <BackToHome />
