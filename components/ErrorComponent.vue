@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import {errors} from '@/static/data/data.json'
+import {errors} from '@/static/data/errors.json'
 import BackToHome from '@/components/BackToHome'
 
 export default {

@@ -6,7 +6,7 @@
 
 <script>
 import ErrorComponent from '@/components/ErrorComponent'
-import {errors} from '@/static/data/data.json'
+import {errors} from '@/static/data/errors.json'
 
 export default {
   components: {ErrorComponent},
