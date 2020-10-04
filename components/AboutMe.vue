@@ -1,7 +1,7 @@
 <template>
   <main class="v-section--main">
     <div class="v-cell first">
-      <h1 class="who-i-am">{{ aboutMe.title }}</h1>
+      <h1 class="v-heading">{{ aboutMe.title }}</h1>
       <div class="about--greeting">{{ aboutMe.greeting }}</div>
       <div class="about--pre">{{ aboutMe.preStory }}</div>
       <div class="about--story">{{ aboutMe.story }}</div>

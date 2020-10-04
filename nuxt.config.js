@@ -5,10 +5,54 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      
+      // Reference for Drupal
+      { name: 'generator', content: 'Drupal 10 (http://drupal.org)' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Front-end web developer (React, Vue, Drupal 7-9). Based in Kyiv, Ukraine. Social: @olegkruchay. Mail: okruchay@gmail.com'
+      },
+      {
+        property: 'og:title',
+        content: 'Hey, I\'m Oleg 👋 Front-end web developer 👨🏻‍💻'
+      },
+      {
+        property: 'og:description',
+        content: 'Front-end web developer (React, Vue, Drupal 7-9). Based in Kyiv, Ukraine. Social: @olegkruchay. Mail: okruchay@gmail.com'
+      },
+      {
+        property: 'og:url',
+        content: 'http://olegkruchay.com'
+      },
+      {
+        property: 'og:url:secure_url',
+        content: 'https://olegkruchay.com'
+      },
+      {
+        property: 'og:site_name',
+        content: 'Oleg Kruchay | Front-end web developer 👨🏻‍💻'
+      },
+      {
+        property: 'og:image',
+        content: 'https://olegkruchay.com/public/oleg.png'
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/png'
+      },
+      {
+        property: 'og:image:alt',
+        content: 'Oleg Kruchay portrait'
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', type: 'image/png', href: '/favicons/apple-touch-icon.png' },
+      { rel: 'icon', sizes: '32x32', type: 'image/png', href: '/favicons/favicon-32x32.png' },
+      { rel: 'icon', sizes: '16x16', type: 'image/png', href: '/favicons/favicon-16x16.png' },
+      { rel: 'manifest', href: '/favicons/site.webmanifest' },
+      { rel: 'mask-icon', href: '/favicons/safari-pinned-tab.svg', color: '#5bbad5' },
     ]
   },
 
@@ -19,7 +63,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/styles/styles.scss'
+    '@/assets/css/styles.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -48,6 +92,9 @@ export default {
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       icons: {
+        regular: [
+          'faHeart',
+        ],
         brands: [
           'faInstagram',
           'faFacebook',
@@ -55,6 +102,15 @@ export default {
           'faDrupal',
           'faLinkedin',
           'faTelegram',
+          'faSkype',
+          'faJs',
+          'faNodeJs',
+          'faReact',
+          'faVuejs',
+          'faDocker',
+          'faSymfony',
+          'faPhp',
+          'faPiedPiperPp',
         ]
       }
     }]

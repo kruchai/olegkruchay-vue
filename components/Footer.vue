@@ -2,10 +2,8 @@
   <footer class="v-footer">
     <!--  Cell 4  -->
     <div class="v-cell fourth text-center">
-      <span>{{ 'v0.6.4' }}</span>
-      <span>
-        {{ 'βeta' }}
-      </span>
+      <span>{{ site.prefix + site.version }}</span>
+      <span>{{ site.status }}</span>
     </div>
 
     <!--  Cell 1  -->
@@ -16,8 +14,8 @@
     <!--  Cell 2  -->
     <div class="v-cell second">
       <div class="footer-description">{{ 'Build on' }} <a href="#" class="v-link">{{ 'NuxtJS' }}</a>.</div>
+      <div class="footer-description">{{ 'Made with' }} <fa :icon="['far', 'heart']" /> <a href="./cv.pdf" class="v-link">{{ 'by myself' }}</a>.</div>
       <div class="footer-description">{{ 'Hosted on' }} <a href="#" class="v-link">{{ 'Netlify' }}</a>.</div>
-      <div class="footer-description">{{ 'The code is open - source on' }} <a href="#" class="v-link">{{ 'Github' }}</a>.</div>
     </div>
 
     <!--  Cell 3  -->
@@ -41,7 +39,9 @@
         <a href="#" class="v-link social telegram">
           <fa :icon="['fab', 'telegram']" />
         </a>
-
+        <a href="#" class="v-link social skype">
+          <fa :icon="['fab', 'skype']" />
+        </a>
       </div>
     </div>
 
@@ -53,13 +53,14 @@
 </template>
 
 <script>
-import {footer} from '@/static/data/data.json'
+import {site, footer} from '@/static/data/data.json'
 
 export default {
   name: 'Footer',
   data() {
     return {
-      footer,
+      site,
+      footer
     }
   },
 }

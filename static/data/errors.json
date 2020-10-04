@@ -1,0 +1,19 @@
+{
+  "errors": {
+    "notFound": {
+      "heading": "Oops, error 404",
+      "description": "Page not found",
+      "code": "404"
+    },
+    "accessDenied": {
+      "heading": "Ohh, error 403",
+      "description": "Access denied",
+      "code": "403"
+    },
+    "node": {
+      "heading": "Ahaha, lol",
+      "description": "A ne Drupal'ist li ty chasom?",
+      "code": "L0L"
+    }
+  }
+}

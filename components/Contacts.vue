@@ -1,7 +1,7 @@
 <template>
   <main class="v-section--main">
     <div class="v-cell first">
-      <h1 class="who-i-am">{{ 'Contacts' }}</h1>
+      <h1 class="v-heading">{{ 'Contacts' }}</h1>
       <div class="contacts-wrapper email">
         <h2>
           <span>{{ 'Email me to ' }}</span>

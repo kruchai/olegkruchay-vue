@@ -2,8 +2,8 @@
   <main class="v-main">
     <!--  Cell 1  -->
     <div class="v-cell first">
-      <div class="hello">{{ main.greeting }} &#x1F44B;</div>
-      <div class="who-i-am">
+      <div class="v-title">{{ main.greeting }} &#x1F44B;</div>
+      <div class="v-heading">
         {{ main.message }}
       </div>
 
