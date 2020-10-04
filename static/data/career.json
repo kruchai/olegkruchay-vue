@@ -1,0 +1,143 @@
+{
+  "career": [
+    {
+      "position": "Senior Front-end developer",
+      "mainStackTech": "Drupal 8",
+      "location": "Kyiv, Ukraine",
+      "company": {
+        "name": "Sceel.io",
+        "webSite": "https://sceel.io"
+      },
+      "startDate": {
+        "month": "Sep",
+        "mo": "9",
+        "year": "2020"
+      },
+      "endDate": {
+        "present": true,
+        "month": "",
+        "mo": "",
+        "year": ""
+      }
+    },
+    {
+      "position": "Senior Front-end developer",
+      "mainStackTech": "ReactJS",
+      "location": "remote",
+      "company": {
+        "name": "Kairos Tech.",
+        "webSite": "https://kairostech.no."
+      },
+      "startDate": {
+        "month": "Jun",
+        "mo": "6",
+        "year": "2020"
+      },
+      "endDate": {
+        "present": false,
+        "month": "Aug",
+        "mo": "8",
+        "year": "2020"
+      }
+    },
+    {
+      "position": "Head of Front-end",
+      "mainStackTech": "Drupal 7-9",
+      "location": "remote",
+      "company": {
+        "name": "Edna",
+        "webSite": "https://edna.ua"
+      },
+      "startDate": {
+        "month": "Jan",
+        "mo": "1",
+        "year": "2020"
+      },
+      "endDate": {
+        "present": true,
+        "month": "",
+        "mo": "",
+        "year": ""
+      }
+    },
+    {
+      "position": "Head of Front-end at UFC",
+      "mainStackTech": "Drupal 8",
+      "location": "Kyiv, Ukraine",
+      "company": {
+        "name": "UFC",
+        "webSite": "https://endeavorco.com"
+      },
+      "startDate": {
+        "month": "Nov",
+        "mo": "11",
+        "year": "2019"
+      },
+      "endDate": {
+        "present": false,
+        "month": "May",
+        "mo": "5",
+        "year": "2020"
+      }
+    },
+    {
+      "position": "Middle Front-end developer",
+      "mainStackTech": "Drupal 7, Drupal 8, ReactJS, GatsbyJS",
+      "location": "Lutsk, Ukraine",
+      "company": {
+        "name": "DevBranch",
+        "webSite": "https://dev-branch.com"
+      },
+      "startDate": {
+        "month": "Jul",
+        "mo": "7",
+        "year": "2017"
+      },
+      "endDate": {
+        "present": false,
+        "month": "Oct",
+        "mo": "10",
+        "year": "2019"
+      }
+    },
+    {
+      "position": "Junior full-stack developer",
+      "mainStackTech": "Drupal 7",
+      "role": "First met with real web-site developing workflow. Also worked at Drudesk company.",
+      "location": "Lutsk, Ukraine",
+      "company": {
+        "name": "InternetDevels",
+        "webSite": "https://internetdevels.com"
+      },
+      "startDate": {
+        "month": "Mar",
+        "mo": "3",
+        "year": "2016"
+      },
+      "endDate": {
+        "present": false,
+        "month": "Dec",
+        "mo": "12",
+        "year": "2016"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": "UFC",
+      "uri": "https://ufc.com"
+    },
+    {
+      "name": "Longos",
+      "uri": "https://longos.com"
+    },
+    {
+      "name": "Windor",
+      "uri": "https://window-kovel.com"
+    },
+    {
+      "name": "WallStreetOasis",
+      "uri": "https://wallstreetoasis.com"
+    }
+  ]
+}

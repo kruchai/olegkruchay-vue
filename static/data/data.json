@@ -1,6 +1,7 @@
 {
   "site": {
-    "version": "0.6.0",
+    "prefix": "v",
+    "version": "0.6.5",
     "status": "βeta"
   },
   "header": {
@@ -29,30 +30,38 @@
     "copyright": "olegkruchay.com"
   },
   "contacts": {
-    "email": "o.kruchay@gmail.com",
+    "title": "Contact me",
+    "mail": "o.kruchay@gmail.com",
     "id": "olegkruchay"
   },
   "aboutMe": {
     "title": "About me",
-    "greeting": "Hola ✌️",
-    "preStory": "My name is Oleg Kruchay. I'm front-end web developer. I need to teel you few words about me as professional in my sphere.",
-    "story": "I have been working as developer since 2016 ....."
-  },
-  "errors": {
-    "notFound": {
-      "heading": "Oops, error 404",
-      "description": "Page not found",
-      "code": "404"
+    "availabilityStatus": "not able",
+    "preStory": {
+      "greeting": "I'm Oleg, 24 y.o. front-end web developer working remotely for",
+      "currectCompany": {
+        "name": "Sceel.io",
+        "uri": "https://sceel.io",
+        "techStack": "Drupal 8"
+      }
     },
-    "accessDenied": {
-      "heading": "Ohh, error 403",
-      "description": "Access denied",
-      "code": "403"
+    "story": "I have been working as web developer since 2016, when I was 3rd year student. In 2019 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating the design solutions into the site.",
+    "location": "Kyiv, Ukraine 🇺🇦",
+    "pofessionalSkills": [
+      "javascript",
+      "CSS"
+    ],
+    "softSkills": [
+      "english b2"
+    ],
+    "hobby": {
+      "title": "There is a list of my hobbies",
+      "listOfHobbies": [
+        "MMA",
+        "Boxing",
+        "Football"
+      ]
     },
-    "node": {
-      "heading": "Ahaha, lol",
-      "description": "A ne Drupal'ist li ty chasom?",
-      "code": "L0L"
-    }
+    "universityExperience": ""
   }
 }
