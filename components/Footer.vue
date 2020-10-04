@@ -2,10 +2,8 @@
   <footer class="v-footer">
     <!--  Cell 4  -->
     <div class="v-cell fourth text-center">
-      <span>{{ 'v0.6.5' }}</span>
-      <span>
-        {{ 'βeta' }}
-      </span>
+      <span>{{ site.prefix + site.version }}</span>
+      <span>{{ site.status }}</span>
     </div>
 
     <!--  Cell 1  -->
@@ -55,13 +53,14 @@
 </template>
 
 <script>
-import {footer} from '@/static/data/data.json'
+import {site, footer} from '@/static/data/data.json'
 
 export default {
   name: 'Footer',
   data() {
     return {
-      footer,
+      site,
+      footer
     }
   },
 }
