@@ -1,0 +1,70 @@
+// container
+.container {
+  display: grid;
+  grid-template-rows: 100px auto 250px;
+  overflow-y: hidden;
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
+  
+  @media (min-width: 851px) {
+    grid-template-rows: 100px auto 100px;
+  }
+}
+
+// animated-grid
+.animated-grid-container {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(10, 1fr);
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  animation-name: lines;
+  animation-duration: 2s;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.line {
+  border-right: 1px solid rgba(186, 186, 186, 0.5);
+  transition: 1s ease-out;
+  
+  &:nth-child(2n) {
+    border-color: transparent;
+  }
+  
+  &:nth-child(3),
+  &:nth-child(7) {
+    @media (max-width: 850px) {
+      border-color: transparent;
+    }
+  }
+  
+  &:last-child {
+    border: none;
+  }
+}
+
+@keyframes lines {
+  from {height: 0.1vh;}
+  to {height: 100vh;}
+}
+
+// v-container
+// 2col
+.v-container {
+  @include grid-container;
+  
+  &.col-2 {
+    @media (min-width: 851px) {
+      @include grid-container(2);
+    }
+  }
+  
+  &.col-3 {
+    @media (min-width: 851px) {
+      @include grid-container(3);
+    }
+  }
+}

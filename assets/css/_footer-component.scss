@@ -1,0 +1,78 @@
+// footer
+.v-footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  
+  @media (min-width: 851px) {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "fourth first first second second second second third third .";
+    position: relative;
+    align-items: center;
+  }
+  
+  .v-cell {
+    z-index: 3;
+    color: #777;
+    font-size: 14px;
+    
+    &.first {
+      color: #ccc;
+      font-size: 13px;
+      
+      @media (max-width: 850px) {
+        order: 3;
+      }
+    }
+    
+    &.second {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      
+      @media (max-width: 850px) {
+        order: 2;
+        flex-direction: column;
+        
+        > div {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    
+    &.third {
+      text-align: right;
+      
+      @media (max-width: 850px) {
+        order: 1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .brand-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    
+    @media (min-width: 851px) {
+      left: 10vw;
+    }
+    
+    img {
+      width: 100%;
+      max-width: 100vw;
+      display: flex;
+      align-self: flex-end;
+      
+      @media (min-width: 851px) {
+        max-width: 80vw;
+      }
+    }
+  }
+}

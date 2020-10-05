@@ -1,0 +1,41 @@
+.v-title {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 25px;
+  
+  @media (min-width: 851px) {
+    font-size: 40px;
+  }
+}
+
+.v-title--bold-sm {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-bottom: 25px;
+  
+  @media (min-width: 851px) {
+    font-size: 30px;
+  }
+}
+
+.v-heading {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Patua One', cursive;
+  line-height: 0.9;
+  
+  @media (min-width: 851px) {
+    font-size: 65px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+.v-text {
+  line-height: 1.5;
+  font-size: 16px;
+}

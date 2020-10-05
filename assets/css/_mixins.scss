@@ -1,0 +1,24 @@
+@mixin grid-container($cols: 1, $rows: 1) {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat($rows, 1fr);
+  grid-template-columns:repeat($cols, 1fr);
+}
+
+//@mixin grid-container-areas($cols: 1, $rows: 1, $visibleCols: 1) {
+//  $visibleCols: $cols;
+//
+//  @include grid-container($cols, $rows);
+//
+//  @if ($cols == 2 and $visibleCols == 2) {
+//    grid-template-areas: "first second";
+//  }
+//
+//  @if ($cols == 3 and $visibleCols == 3) {
+//    grid-template-areas: "first second third";
+//  }
+//
+//  @if ($cols == 10 and $visibleCols == 2) {
+//    grid-template-areas: ". . . first first second second . . .";
+//  }
+//}
