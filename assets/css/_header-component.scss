@@ -1,0 +1,51 @@
+// header
+.v-header {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "first first . . second second . . third third";
+  text-align: center;
+  align-items: center;
+  
+  @media (min-width: 1200px) {
+    grid-template-areas:
+      "first . . . second second . . . third";
+  }
+  
+  .v-cell {
+    color: #777;
+    
+    &.first {
+      .v-link-header {
+        @media (max-width: 850px) {
+          .v-show {
+            &.mobile {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .v-link-header {
+    display: inline-block;
+    
+    @media (max-width: 850px) {
+      &:before,
+      &:after {
+        content: none;
+      }
+      
+      .v-show {
+        &.mobile {
+          content: "i";
+          font-family: 'Niconne', cursive;
+          justify-content: center;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}

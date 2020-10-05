@@ -7,7 +7,7 @@
         {{ main.message }}
       </div>
 
-      <div class="cv-container">
+      <div class="v-container col-2">
         <div class="download-cv">
           <a :href="main.cvLink.cvLinkUri" class="v-cta">
             <span class="circle">
