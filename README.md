@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.6.7 ßeta```
+###### 🎭🎲️ Current version ```v0.7 ßeta```
 
 ### 🔩🔧 Build Setup 
 
@@ -31,10 +31,15 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Drupal error pages relations
 - The special pages: node/, node/1, admin/, user/
 
-#### 💣🧨 Features in future 
-
+    
+#### 🧨 Major updates 
+- Main pages: Home, About, Contacts
+    - starts from version ```v0.7```
 - Moving the G fonts into the separate library.
-- 'about me' popup
+    - starts from version ```v0.6.4```
+
+#### 💣 Features in future 
+
 - Day/night mode
 - custom cursor
 - new page sections related to my experience and portfolio

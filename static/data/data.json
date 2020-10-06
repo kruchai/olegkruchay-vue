@@ -1,7 +1,7 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.6.7",
+    "version": "0.7",
     "status": "βeta"
   },
   "header": {
@@ -30,12 +30,69 @@
     "copyright": "olegkruchay.com"
   },
   "contacts": {
-    "title": "Contact me",
+    "title": "Contact Me",
     "mail": "o.kruchay@gmail.com",
-    "id": "olegkruchay"
+    "id": "olegkruchay",
+    "msgSectionTitle": "Message Me",
+    "messengers": [
+      {
+        "title": "Ping me in Telegram",
+        "uri": "https://t.me/olegkruchay",
+        "faIcon": [
+          "fab",
+          "telegram"
+        ],
+        "class": "telegram"
+      },
+      {
+        "title": "Watch my stories at Insta",
+        "uri": "https://instagram.com/olegkruchay",
+        "faIcon": [
+          "fab",
+          "instagram"
+        ],
+        "class": "instagram"
+      },
+      {
+        "title": "Hire me in LinkedIn",
+        "uri": "https://linkedin.com/in/olegkruchay",
+        "faIcon": [
+          "fab",
+          "linkedin"
+        ],
+        "class": "linkedin"
+      },
+      {
+        "title": "Call me in Skype",
+        "uri": "https://join.skype.com/invite/gEaqTmOriBg5",
+        "faIcon": [
+          "fab",
+          "skype"
+        ],
+        "class": "skype"
+      },
+      {
+        "title": "Spam me directly",
+        "uri": "mailto:okruchay@gmail.com",
+        "faIcon": [
+          "far",
+          "envelope"
+        ],
+        "class": ""
+      },
+      {
+        "title": "React me in Facebook Messenger",
+        "uri": "https://www.messenger.com/t/olegkruchay",
+        "faIcon": [
+          "fab",
+          "facebook-messenger"
+        ],
+        "class": "messenger"
+      }
+    ]
   },
   "aboutMe": {
-    "title": "About me",
+    "title": "About Me",
     "availabilityStatus": "not able",
     "preStory": {
       "greeting": "I'm Oleg, 24 y.o. front-end web developer working remotely for",
@@ -48,8 +105,70 @@
     "story": "I have been working as web developer since 2016, when I was 3rd year student. In 2019 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating the design solutions into the site.",
     "location": "Kyiv, Ukraine 🇺🇦",
     "pofessionalSkills": [
-      "javascript",
-      "CSS"
+      {
+        "title": "ECMAScript 6",
+        "faIcon": [
+          "fab",
+          "js"
+        ],
+        "class": "js"
+      },
+      {
+        "title": "ReactJS",
+        "faIcon": [
+          "fab",
+          "react"
+        ],
+        "class": "react"
+      },
+      {
+        "title": "VueJS",
+        "faIcon": [
+          "fab",
+          "vuejs"
+        ],
+        "class": "vue"
+      },
+      {
+        "title": "NodeJS",
+        "faIcon": [
+          "fab",
+          "node-js"
+        ],
+        "class": "node"
+      },
+      {
+        "title": "Drupal 7 – 9",
+        "faIcon": [
+          "fab",
+          "drupal"
+        ],
+        "class": "drupal"
+      },
+      {
+        "title": "Php",
+        "faIcon": [
+          "fab",
+          "php"
+        ],
+        "class": "php"
+      },
+      {
+        "title": "Docker",
+        "faIcon": [
+          "fab",
+          "docker"
+        ],
+        "class": "docker"
+      },
+      {
+        "title": "A Silicon Valley Technologies",
+        "faIcon": [
+          "fab",
+          "pied-piper-pp"
+        ],
+        "class": "pp"
+      }
     ],
     "softSkills": [
       "english b2"
