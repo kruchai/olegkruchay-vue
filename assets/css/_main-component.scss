@@ -1,5 +1,5 @@
 // main
-.v-main {
+.ok-main {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
@@ -16,9 +16,7 @@
       ". . . first first first first . . .";
   }
   
-  .v-container {
-    margin-top: 50px;
-  
+  .ok-container {
     @media (max-width: 850px) {
       > div {
         margin-bottom: 20px;

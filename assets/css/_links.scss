@@ -1,4 +1,4 @@
-.v-link {
+.ok-link {
   color: #999;
   position: relative;
   text-decoration: none;
@@ -65,31 +65,7 @@
     transition: none;
     color: $grey-main-cta;
     font-size: 22px;
-    padding: 0 5px;
-    
-    &:hover {
-      &.instagram {
-        color: #0d1a2b;
-      }
-      &.linkedin {
-        color: #0077b5;
-      }
-      &.facebook {
-        color: #3b5998;
-      }
-      &.drupal {
-        color: #0077c0;
-      }
-      &.codepen {
-        color: #00112c;
-      }
-      &.telegram {
-        color: #0088cc;
-      }
-      &.skype {
-        color: #00aff0;
-      }
-    }
+    padding: 5px;
     
     &:before,
     &:after {
@@ -99,7 +75,7 @@
 }
 
 // main cta
-.v-cta {
+.ok-cta {
   position: relative;
   cursor: pointer;
   outline: none;
@@ -262,5 +238,60 @@
     text-transform: uppercase;
     width: 100%;
     transition: all 0.5s cubic-bezier(0.65,0,.076,1);
+  }
+}
+
+// Social
+.social {
+  transition: all 0.3s ease-in-out;
+  color: $grey-main-cta;
+  font-size: 40px;
+  
+  &:hover {
+    &.instagram {
+      color: #c13584;
+    }
+    &.linkedin {
+      color: #0077b5;
+    }
+    &.facebook {
+      color: #3b5998;
+    }
+    &.drupal {
+      color: #0077c0;
+    }
+    &.codepen {
+      color: #00112c;
+    }
+    &.telegram {
+      color: #0088cc;
+    }
+    &.skype {
+      color: #00aff0;
+    }
+    &.messenger {
+      color: #0084ff;
+    }
+    &.node {
+      color: #6cc24a;
+    }
+    &.vue {
+      color: #42b883;
+    }
+    &.react {
+      color: #00d8ff;
+    }
+    &.js {
+      color: #f8dc3c;
+    }
+    &.php {
+      color: #8892be;
+    }
+    &.docker {
+      color: #0db7ed;
+    }
+    &.pp {
+      color: #029777;
+    }
   }
 }
