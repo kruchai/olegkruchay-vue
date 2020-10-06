@@ -9,13 +9,13 @@
           <img src="@/assets/images/ok.jpg" alt="Oleg">
         </div>
         <div class="ok-column second">
-          <h1 class="about--pre v-title--bold-sm">
+          <h1 class="about--pre ok-title--bold-sm">
             <span class="">{{ aboutMe.preStory.greeting }}</span>
             <a class="ok-link" :href="aboutMe.preStory.currectCompany.uri">{{ aboutMe.preStory.currectCompany.name }}</a>
             <span>{{ "on their " + aboutMe.preStory.currectCompany.techStack + " projects in sunny" }}</span>
             <span>{{ aboutMe.location }}</span>
           </h1>
-          <div class="about--story v-text">{{ aboutMe.story }}</div>
+          <div class="about--story ok-text">{{ aboutMe.story }}</div>
         </div>
       </div>
 
@@ -30,20 +30,20 @@
         </span>
       </div>
       <h2 class="ok-title section">{{ "Career" }}</h2>
-      <article class="ok-box">
+      <div class="ok-box">
         <div class="career--items">
           <div class="career--item" v-for="(item, i) in career" :key="i">
-            <span>
+            <span class="ok-column first">
               <span>{{ item.startDate.month + " " + item.startDate.year }}</span>
               <span>{{ " – " }}</span>
               <span v-if="item.endDate.present">{{ "Present" }}</span>
               <span v-else>{{ item.endDate.month + " " + item.endDate.year }}</span>
             </span>
-            <span>{{ item.position }} {{ "at" }} <a class="ok-link" :href="item.company.webSite">{{ item.company.name }}</a></span>
-            <span>{{ item.location }}</span>
+            <span class="ok-column second">{{ item.position }} {{ "at" }} <a class="ok-link" :href="item.company.webSite">{{ item.company.name }}</a></span>
+            <span class="ok-column third">{{ item.location }}</span>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   </main>
 </template>
