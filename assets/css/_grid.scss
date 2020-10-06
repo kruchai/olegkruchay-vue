@@ -1,7 +1,7 @@
 // basic
 
 // main
-.v-section--main {
+.ok-section--main {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
@@ -22,14 +22,19 @@
   }
   
   &.extra-section {
-    @media (min-width: 1200px) {
+    @media (min-width: 851px) {
+      grid-template-areas:
+        ". . first first first first first first . .";
+    }
+    
+    @media (min-width: 1600px) {
       grid-template-areas:
         ". . first first first first first first . .";
     }
   }
 }
 
-.v-cell {
+.ok-column {
   position: relative;
   z-index: 3;
   color: #777;

@@ -1,5 +1,5 @@
 // header
-.v-header {
+.ok-header {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
@@ -13,13 +13,13 @@
       "first . . . second second . . . third";
   }
   
-  .v-cell {
+  .ok-column {
     color: #777;
     
     &.first {
-      .v-link-header {
+      .ok-link-header {
         @media (max-width: 850px) {
-          .v-show {
+          .ok-show {
             &.mobile {
               font-size: 30px;
             }
@@ -29,7 +29,7 @@
     }
   }
   
-  .v-link-header {
+  .ok-link-header {
     display: inline-block;
     
     @media (max-width: 850px) {
@@ -38,7 +38,7 @@
         content: none;
       }
       
-      .v-show {
+      .ok-show {
         &.mobile {
           content: "i";
           font-family: 'Niconne', cursive;

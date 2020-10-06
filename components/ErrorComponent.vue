@@ -1,16 +1,16 @@
 <template>
-  <main class="v-section--main">
-    <div class="v-cell first">
+  <main class="ok-section--main">
+    <div class="ok-column first">
       <div v-if="statusCode === 404">
-        <span class="v-title">{{ errors.notFound.heading }} 🗿</span>
+        <span class="ok-title">{{ errors.notFound.heading }} 🗿</span>
         <h1>
-          <span class="v-heading">{{ errors.notFound.description }}</span>
+          <span class="ok-heading">{{ errors.notFound.description }}</span>
         </h1>
       </div>
       <div v-else>
-        <span class="v-title">{{ heading }} 🐣</span>
+        <span class="ok-title">{{ heading }} 🐣</span>
         <h1>
-          <span class="v-heading">{{ description }}</span>
+          <span class="ok-heading">{{ description }}</span>
         </h1>
       </div>
       <BackToHome />

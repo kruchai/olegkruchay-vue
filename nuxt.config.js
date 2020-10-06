@@ -83,7 +83,7 @@ export default {
         Righteous: true,
         'Patua+One': true,
         Comfortaa: {
-          wght: [300, 400],
+          wght: [300, 400, 700],
         },
       },
       display: 'swap',
@@ -94,10 +94,12 @@ export default {
       icons: {
         regular: [
           'faHeart',
+          'faEnvelope'
         ],
         brands: [
           'faInstagram',
           'faFacebook',
+          'faFacebookMessenger',
           'faCodepen',
           'faDrupal',
           'faLinkedin',

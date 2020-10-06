@@ -1,6 +1,6 @@
 <template>
   <div class="back-to-home">
-    <NuxtLink exact-active-class="v-link active" class="v-link" to="/">{{ '🏡 back to home' }}</NuxtLink>
+    <NuxtLink exact-active-class="ok-link active" class="ok-link" to="/">{{ '🏡 back to home' }}</NuxtLink>
   </div>
 </template>
 

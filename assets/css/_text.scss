@@ -1,4 +1,4 @@
-.v-title {
+.ok-title {
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   font-size: 30px;
@@ -7,21 +7,53 @@
   @media (min-width: 851px) {
     font-size: 40px;
   }
+  
+  &.section {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  
+    @media (max-width: 850px) {
+      font-size: 14px;
+    }
+    
+    @media (min-width: 851px) {
+      font-size: 14px;
+      margin: 50px 0;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      height: 40px;
+      width: 1px;
+      left: 50%;
+      background-color: #f08080;
+      
+      // tweak
+      transform: translateX(calc(-50% - 0.5px));
+    }
+  }
 }
 
-.v-title--bold-sm {
+.ok-title--bold-sm {
   font-family: 'Comfortaa', cursive;
   font-weight: 700;
   line-height: 1.5;
   font-size: 24px;
-  margin-bottom: 25px;
+  margin: 50px 0 25px;
   
-  @media (min-width: 851px) {
+  @media (min-width: 1200px) {
     font-size: 30px;
+    margin: 0 0 25px;
   }
 }
 
-.v-heading {
+.ok-heading {
   font-size: 45px;
   font-weight: bold;
   font-family: 'Patua One', cursive;
@@ -35,7 +67,11 @@
   }
 }
 
-.v-text {
-  line-height: 1.5;
+.ok-text {
+  line-height: 1.7;
   font-size: 16px;
+  
+  @media (min-width: 851px) {
+    line-height: 1.5;
+  }
 }
