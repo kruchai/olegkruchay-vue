@@ -1,26 +1,26 @@
 <template>
-  <header class="v-header">
+  <header class="ok-header">
     <!--  Cell 1  -->
-    <div class="v-cell first">
-      <NuxtLink exact-active-class="v-link active" class="v-link v-link-header" :to="header.contactsLink.contactsLinkUri">
-        <span class="v-hide mobile">{{ header.contactsLink.contactsLinkTitle }}</span>
-        <span class="v-show mobile">{{ '📨' }}</span>
+    <div class="ok-column first">
+      <NuxtLink exact-active-class="ok-link active" class="ok-link ok-link-header" :to="header.contactsLink.contactsLinkUri">
+        <span class="ok-hide mobile">{{ header.contactsLink.contactsLinkTitle }}</span>
+        <span class="ok-show mobile">{{ '📨' }}</span>
       </NuxtLink>
     </div>
 
     <!--  Cell 2  -->
-    <div class="v-cell second">
-      <NuxtLink to="/" class="logo v-link">
+    <div class="ok-column second">
+      <NuxtLink to="/" class="logo ok-link">
         <span>o</span>
         <span>k</span>
       </NuxtLink>
     </div>
 
     <!--  Cell 3  -->
-    <div class="v-cell third">
-      <NuxtLink exact-active-class="v-link active" class="v-link v-link-header" :to="header.aboutLink.aboutLinkUri">
-        <span class="v-hide mobile">{{ header.aboutLink.aboutLinkTitle }}</span>
-        <span class="v-show mobile">{{ 'i' }}</span>
+    <div class="ok-column third">
+      <NuxtLink exact-active-class="ok-link active" class="ok-link ok-link-header" :to="header.aboutLink.aboutLinkUri">
+        <span class="ok-hide mobile">{{ header.aboutLink.aboutLinkTitle }}</span>
+        <span class="ok-show mobile">{{ 'i' }}</span>
       </NuxtLink>
     </div>
   </header>

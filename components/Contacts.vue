@@ -1,8 +1,8 @@
 <template>
-  <main class="v-section--main page--contacts">
-    <div class="v-cell first">
-      <h1 class="v-title section">{{ contacts.title }}</h1>
-      <div class="v-box wrapper-email">
+  <main class="ok-section--main page--contacts">
+    <div class="ok-column first">
+      <h1 class="ok-title section">{{ contacts.title }}</h1>
+      <div class="ok-box wrapper-email">
         <div
           class="tooltip email"
           v-clipboard:copy="contacts.mail"
@@ -18,8 +18,8 @@
           </span>
         </div>
       </div>
-      <h2 class="v-title section">{{ contacts.msgSectionTitle }}</h2>
-      <div class="v-box wrapper-social bg">
+      <h2 class="ok-title section">{{ contacts.msgSectionTitle }}</h2>
+      <div class="ok-box wrapper-social bg">
         <a
           v-for="(msg, i) in contacts.messengers"
           :key="i"

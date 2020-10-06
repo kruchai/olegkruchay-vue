@@ -94,10 +94,12 @@ export default {
       icons: {
         regular: [
           'faHeart',
+          'faEnvelope'
         ],
         brands: [
           'faInstagram',
           'faFacebook',
+          'faFacebookMessenger',
           'faCodepen',
           'faDrupal',
           'faLinkedin',

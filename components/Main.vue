@@ -1,15 +1,15 @@
 <template>
-  <main class="v-main">
+  <main class="ok-main">
     <!--  Cell 1  -->
-    <div class="v-cell first">
-      <div class="v-title">{{ main.greeting }} &#x1F44B;</div>
-      <div class="v-heading">
+    <div class="ok-column first">
+      <div class="ok-title">{{ main.greeting }} &#x1F44B;</div>
+      <div class="ok-heading">
         {{ main.message }}
       </div>
 
-      <div class="v-container col-2">
+      <div class="ok-container col-2">
         <div class="download-cv">
-          <a :href="main.cvLink.cvLinkUri" class="v-cta">
+          <a :href="main.cvLink.cvLinkUri" class="ok-cta">
             <span class="circle">
               <span class="icon-wrapper">
                 <span class="icon download"></span>
@@ -21,7 +21,7 @@
           </a>
         </div>
         <div class="message-me">
-          <NuxtLink exact-active-class="v-link-active" to="/contacts" class="v-cta v-link">
+          <NuxtLink exact-active-class="ok-link-active" to="/contacts" class="ok-cta ok-link">
             <span class="circle">
               <span class="icon-wrapper">
                 <span class="icon letter"></span>
