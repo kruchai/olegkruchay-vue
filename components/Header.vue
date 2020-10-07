@@ -1,6 +1,6 @@
 <template>
   <header class="ok-header">
-    <!--  Cell 1  -->
+    <!--  Column 1  -->
     <div class="ok-column first">
       <NuxtLink exact-active-class="ok-link active" class="ok-link ok-link-header" :to="header.contactsLink.contactsLinkUri">
         <span class="ok-hide mobile">{{ header.contactsLink.contactsLinkTitle }}</span>
@@ -8,7 +8,7 @@
       </NuxtLink>
     </div>
 
-    <!--  Cell 2  -->
+    <!--  Column 2  -->
     <div class="ok-column second">
       <NuxtLink to="/" class="logo ok-link">
         <span>o</span>
@@ -16,7 +16,7 @@
       </NuxtLink>
     </div>
 
-    <!--  Cell 3  -->
+    <!--  Column 3  -->
     <div class="ok-column third">
       <NuxtLink exact-active-class="ok-link active" class="ok-link ok-link-header" :to="header.aboutLink.aboutLinkUri">
         <span class="ok-hide mobile">{{ header.aboutLink.aboutLinkTitle }}</span>

@@ -1,6 +1,6 @@
 <template>
-  <main class="ok-main">
-    <!--  Cell 1  -->
+  <main class="ok-main page--home">
+    <!--  Column 1  -->
     <div class="ok-column first">
       <div class="ok-title">{{ main.greeting }} &#x1F44B;</div>
       <div class="ok-heading">
