@@ -65,6 +65,15 @@ body {
   text-align: center;
 }
 
+// home page
+.page--home {
+  .ok-container {
+    @media (max-width: 850px) {
+      margin: 25px 0 0;
+    }
+  }
+}
+
 // about page
 .page--about {
   .ok-container {
