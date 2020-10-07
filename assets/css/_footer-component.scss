@@ -10,7 +10,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "fourth first first second second second second third third .";
+      "first second second third third third third fourth fourth .";
     position: relative;
     align-items: center;
   }
@@ -20,7 +20,7 @@
     color: #777;
     font-size: 14px;
     
-    &.first {
+    &.second {
       color: #ccc;
       font-size: 13px;
       
@@ -29,7 +29,7 @@
       }
     }
     
-    &.second {
+    &.third {
       text-align: center;
       display: flex;
       justify-content: space-around;
@@ -44,7 +44,7 @@
       }
     }
     
-    &.third {
+    &.fourth {
       text-align: right;
       
       @media (max-width: 850px) {
