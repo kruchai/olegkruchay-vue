@@ -1,7 +1,7 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.7",
+    "version": "0.7.1",
     "status": "βeta"
   },
   "header": {
@@ -27,7 +27,96 @@
     }
   },
   "footer": {
-    "copyright": "olegkruchay.com"
+    "copyright": "olegkruchay.com",
+    "descriptions": [
+      {
+        "text": "Build on",
+        "link": {
+          "title": "NuxtJS",
+          "uri": "https://nuxtjs.org"
+        }
+      },
+      {
+        "text": "Made with",
+        "faIcon": [
+          "far",
+          "heart"
+        ],
+        "link": {
+          "title": "by myself",
+          "uri": "/cv.pdf"
+        }
+      },
+      {
+        "text": "Hosted on",
+        "link": {
+          "title": "Netlify",
+          "uri": "https://netlify.com"
+        }
+      }
+    ],
+    "socialNetworks": [
+      {
+        "uri": "https://instagram.com/olegkruchay",
+        "faIcon": [
+          "fab",
+          "instagram"
+        ],
+        "class": "instagram"
+      },
+      {
+        "uri": "https://linkedin.com/in/olegkruchay",
+        "faIcon": [
+          "fab",
+          "linkedin"
+        ],
+        "class": "linkedin"
+      },
+      {
+        "uri": "https://facebook.com/olegkruchay",
+        "faIcon": [
+          "fab",
+          "facebook"
+        ],
+        "class": "facebook"
+      },
+      {
+        "uri": "https://drupal.org/u/scoutex",
+        "faIcon": [
+          "fab",
+          "drupal"
+        ],
+        "class": "drupal"
+      },
+      {
+        "uri": "https://codepen.io/olegscout",
+        "faIcon": [
+          "fab",
+          "codepen"
+        ],
+        "class": "codepen"
+      },
+      {
+        "uri": "https://join.skype.com/invite/gEaqTmOriBg5",
+        "faIcon": [
+          "fab",
+          "skype"
+        ],
+        "class": "skype"
+      },
+      {
+        "uri": "https://t.me/olegkruchay",
+        "faIcon": [
+          "fab",
+          "telegram"
+        ],
+        "class": "telegram"
+      }
+    ],
+    "brandLogo": {
+      "alt": "Oleg Kruchay logo",
+      "image": "footer-logo-cropped.png"
+    }
   },
   "contacts": {
     "title": "Contact Me",
@@ -94,6 +183,10 @@
   "aboutMe": {
     "title": "About Me",
     "availabilityStatus": "not able",
+    "portraitPhoto": {
+      "alt": "Oleg Kruchay portrait",
+      "image": "ok.jpg"
+    },
     "preStory": {
       "greeting": "I'm Oleg, 24 y.o. front-end web developer working remotely for",
       "currectCompany": {

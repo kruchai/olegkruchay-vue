@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7 ßeta```
+###### 🎭🎲️ Current version ```v0.7.1 ßeta```
 
 ### 🔩🔧 Build Setup 
 
