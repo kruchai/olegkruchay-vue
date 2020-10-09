@@ -68,6 +68,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '@/plugins/vue-lazysizes.client.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -77,18 +78,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    ['@nuxtjs/google-fonts', {
-      families: {
-        Niconne: true,
-        Righteous: true,
-        'Patua+One': true,
-        Comfortaa: {
-          wght: [300, 400, 700],
-        },
-      },
-      display: 'swap',
-      download: true,
-    }],
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       icons: {
@@ -117,14 +106,64 @@ export default {
       }
     }]
   ],
+  
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  build: {
+    extend (config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    }
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Niconne: true,
+        Righteous: true,
+        'Patua+One': true,
+        Comfortaa: {
+          wght: [300, 400, 700],
+        },
+      },
+      display: 'swap',
+      download: true,
+    }],
+    'nuxt-webfontloader',
     '@nuxtjs/robots',
-    'nuxt-clipboard2'
+    'nuxt-clipboard2',
+    '@aceforth/nuxt-optimized-images',
   ],
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
+  
+  webfontloader: {
+    google: {
+      families: [
+        'Niconne&display=swap',
+        'Righteous&display=swap',
+        'Patua+One&display=swap',
+        'Comfortaa:300,400,700&display=swap'
+      ]
+    }
+  },
+  
+  optimizedImages: {
+    inlineImageLimit: -1,
+    handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+    optimizeImages: true,
+    optimizeImagesInDev: false,
+    defaultImageLoader: 'img-loader',
+    mozjpeg: {
+      quality: 85
+    },
+    optipng: false,
+    pngquant: {
+      speed: 7,
+      quality: [0.65, 0.8]
+    },
+    webp: {
+      quality: 85
+    }
   }
 }

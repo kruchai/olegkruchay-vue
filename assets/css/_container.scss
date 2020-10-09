@@ -1,8 +1,8 @@
 // container
 .container {
   display: grid;
-  grid-template-rows: 100px auto 250px;
-  overflow-y: hidden;
+  grid-template-rows: 100px auto 320px;
+  overflow-x: hidden;
   z-index: 1;
   position: relative;
   min-height: 100vh;
