@@ -4,10 +4,18 @@
       <h3 class="ok-title section">{{ aboutMe.title }}</h3>
       <div class="ok-container col-2">
         <div class="ok-column first">
-          <img
-            :alt="aboutMe.portraitPhoto.alt"
-            :src="require(`@/assets/images/${aboutMe.portraitPhoto.image}`)"
-          />
+          <figure class="picture">
+            <picture>
+              <source :data-srcset="require(`@/assets/images/${aboutMe.portraitPhoto.image}`) + '?webp'" type="image/webp">
+              <source :data-srcset="require(`@/assets/images/${aboutMe.portraitPhoto.image}`)" type="image/jpeg">
+              <img
+                :data-src="require(`@/assets/images/ok-placeholder.jpg`)"
+                :src="require(`@/assets/images/ok-placeholder.jpg`)"
+                class="lazyload"
+                :alt="aboutMe.portraitPhoto.alt"
+              />
+            </picture>
+          </figure>
         </div>
         <div class="ok-column second">
           <h1 class="about--pre ok-title--bold-sm">
