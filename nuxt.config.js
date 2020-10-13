@@ -94,6 +94,7 @@ export default {
           'faLinkedin',
           'faTelegram',
           'faSkype',
+          'faGithub',
           'faJs',
           'faNodeJs',
           'faReact',
@@ -102,6 +103,9 @@ export default {
           'faSymfony',
           'faPhp',
           'faPiedPiperPp',
+          'faCreativeCommons',
+          'faCreativeCommonsBy',
+          'faCreativeCommonsSa',
         ]
       }
     }]
@@ -135,6 +139,7 @@ export default {
     '@nuxtjs/robots',
     'nuxt-clipboard2',
     '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/svg'
   ],
   
   webfontloader: {
@@ -150,7 +155,7 @@ export default {
   
   optimizedImages: {
     inlineImageLimit: -1,
-    handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+    handleImages: ['jpeg', 'png', 'webp', 'gif'],
     optimizeImages: true,
     optimizeImagesInDev: false,
     defaultImageLoader: 'img-loader',
