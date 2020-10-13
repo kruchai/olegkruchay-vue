@@ -13,16 +13,27 @@
 
     <!--  Column 3  -->
     <div class="ok-column third">
-      <div
-        class="footer-description"
-        v-for="(description, i) in footer.descriptions"
-        :key="i"
-      >
-        {{ description.text }}
-        <fa v-if="description.faIcon" :icon="description.faIcon" />
-        <a :href="description.link.uri" class="ok-link">{{
-          description.link.title
-        }}</a>
+      <div class="ok-description">
+        <div
+          class="footer-description"
+          v-for="(description, i) in footer.descriptions"
+          :key="i"
+        >
+          {{ description.text }}
+          <fa v-if="description.faIcon" :icon="description.faIcon" />
+          <a :href="description.link.uri" class="ok-link">{{
+            description.link.title
+          }}</a>
+        </div>
+      </div>
+      <div class="license">
+        <span class="license-text">{{ license.description }}</span>
+        <a :href="license.link.uri" rel="license" class="ok-link license-link">
+          <span class="license-title">{{ license.link.title }}</span>
+          <span class="license-icons">
+            <fa v-for="(icon, i) in license.link.icons" :key="i" :icon="icon.faIcon" />
+          </span>
+        </a>
       </div>
     </div>
 
@@ -42,22 +53,22 @@
 
     <!--  Absolute section  -->
     <div class="brand-name">
-      <img
-        :alt="footer.brandLogo.alt"
-        :src="require(`@/assets/images/${footer.brandLogo.image}`)"
-      />
+      <FooterLogo />
     </div>
   </footer>
 </template>
 
 <script>
-import {site, footer} from '@/static/data/data.json'
+import { site, license, footer } from '@/static/data/data.json';
+import FooterLogo from '~/assets/images/logo-full.svg?inline';
 
 export default {
   name: 'Footer',
+  components: { FooterLogo },
   data() {
     return {
       site,
+      license,
       footer,
     };
   },

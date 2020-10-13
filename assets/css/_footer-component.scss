@@ -32,13 +32,81 @@
     &.third {
       text-align: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      flex-direction: column;
+      
+      .license {
+        margin-bottom: 20px;
+  
+        @media (min-width: 851px) {
+          margin-top: 5px;
+          margin-bottom: 0;
+        }
+        @media (min-width: 1200px) {
+          margin-top: 15px;
+        }
+        
+        .license-text {
+          color: #ddd;
+          
+          @media (min-width: 1200px) {
+            font-size: 10px;
+          }
+          @media (max-width: 1599px) {
+            display: none;
+          }
+        }
+        
+        .ok-link {
+          color: #c8c8c8;
+          font-size: 20px;
+          
+          @media (min-width: 1200px) {
+            font-size: 10px;
+          }
+          
+          .license-title {
+            @media (max-width: 1199px) {
+              display: none;
+            }
+          }
+  
+          .license-icons {
+            @media (max-width: 1199px) {
+              svg {
+                margin: 0 10px;
+              }
+            }
+          }
+          
+          &:hover {
+            &:after {
+              content: none;
+            }
+          }
+          
+          &:before {
+            background-color: transparent;
+            bottom: 0;
+          }
+        }
+      }
+      
+      .ok-description {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+  
+        @media (min-width: 851px) {
+          flex-direction: row;
+        }
+      }
       
       @media (max-width: 850px) {
         order: 2;
         flex-direction: column;
         
-        > div {
+        .footer-description {
           margin-bottom: 30px;
         }
       }
@@ -65,6 +133,7 @@
   }
   
   .brand-name {
+    overflow: hidden;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -74,11 +143,13 @@
       left: 10vw;
     }
     
-    img {
-      width: 100%;
-      max-width: 100vw;
+    svg {
+      position: relative;
+      fill: #f6f6f6;
+      width: 100vw;
       display: flex;
       align-self: flex-end;
+      top: 3vw;
       
       @media (min-width: 851px) {
         max-width: 80vw;

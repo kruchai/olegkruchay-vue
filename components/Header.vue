@@ -10,9 +10,8 @@
 
     <!--  Column 2  -->
     <div class="ok-column second">
-      <NuxtLink to="/" class="logo ok-link">
-        <span>o</span>
-        <span>k</span>
+      <NuxtLink to="/" class="ok-link logo">
+        <HeaderLogo />
       </NuxtLink>
     </div>
 
@@ -28,9 +27,11 @@
 
 <script>
 import { header } from '~/static/data/data.json'
+import HeaderLogo from '~/assets/images/logo.svg?inline';
 
 export default {
   name: 'Header',
+  components: { HeaderLogo },
   data() {
     return {
       header,
