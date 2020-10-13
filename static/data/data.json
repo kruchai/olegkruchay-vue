@@ -1,8 +1,35 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "status": "βeta"
+  },
+  "license": {
+    "description": "This work is licensed under a",
+    "link": {
+      "uri": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "title": "Creative Commons Attribution-ShareAlike 4.0 International License",
+      "icons": [
+        {
+          "faIcon": [
+            "fab",
+            "creative-commons"
+          ]
+        },
+        {
+          "faIcon": [
+            "fab",
+            "creative-commons-by"
+          ]
+        },
+        {
+          "faIcon": [
+            "fab",
+            "creative-commons-sa"
+          ]
+        }
+      ]
+    }
   },
   "header": {
     "aboutLink": {
@@ -97,20 +124,12 @@
         "class": "codepen"
       },
       {
-        "uri": "https://join.skype.com/invite/gEaqTmOriBg5",
+        "uri": "https://github.com/olegscout",
         "faIcon": [
           "fab",
-          "skype"
+          "github"
         ],
-        "class": "skype"
-      },
-      {
-        "uri": "https://t.me/olegkruchay",
-        "faIcon": [
-          "fab",
-          "telegram"
-        ],
-        "class": "telegram"
+        "class": "github"
       }
     ],
     "brandLogo": {
