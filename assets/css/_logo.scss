@@ -1,32 +1,67 @@
-// logo
+// main logo
 a {
   &.logo {
     text-decoration: none;
     
-    &:before {
+    &:hover {
+      svg {
+        animation: heartbeat 1s infinite;
+  
+        @media (min-width: 851px) {
+          background: $main;
+        }
+        
+        .logo-main-word {
+          fill: $main;
+          
+          @media (min-width: 851px) {
+            fill: $white;
+          }
+        }
+      }
+    }
+    
+    &:before,
+    &:after {
       content: none;
+      height: 0;
     }
   }
 }
 
 .logo {
-  position: relative;
-  font-family: 'Righteous', cursive;
-  color: #ddd;
-  border: 1px solid;
-  display: inline-block;
-  text-align: center;
-  padding: 0;
-  border-radius: 25% 0 25% 0;
-  line-height: 54px;
-  font-weight: 700;
-  font-size: 40px;
-  height: 54px;
-  width: 54px;
-  
-  span {
-    &:last-child {
-      margin-left: -16px;
-    }
+  svg {
+    width: 60px;
+    fill: #c8c8c8;
+    stroke-miterlimit: 10;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px 0 15px 0;
+  }
+}
+
+@keyframes heartbeat {
+  0%
+  {
+    transform: scale( .95 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .95 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .95 );
+  }
+  100%
+  {
+    transform: scale( .95 );
   }
 }
