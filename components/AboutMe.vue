@@ -83,7 +83,7 @@ import BackToHome from '@/components/BackToHome'
 
 export default {
   name: 'AboutMe',
-  components: {BackToHome},
+  components: { BackToHome },
   data() {
     return {
       aboutMe,
