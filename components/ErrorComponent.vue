@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import {errors} from '@/static/data/errors.json'
+import { errors } from '@/static/data/errors.json'
 import BackToHome from '@/components/BackToHome'
 
 export default {
   name: 'ErrorComponent',
-  components: {BackToHome},
+  components: { BackToHome },
   props: ['statusCode', 'heading', 'description'],
   data() {
     return {

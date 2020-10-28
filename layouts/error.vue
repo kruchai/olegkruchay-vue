@@ -6,8 +6,8 @@
 import ErrorComponent from '@/components/ErrorComponent'
 
 export default {
-  components: {ErrorComponent},
+  components: { ErrorComponent },
   props: ['error'],
-  layout: 'default'
+  layout: 'default',
 }
 </script>

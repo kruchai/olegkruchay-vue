@@ -6,7 +6,7 @@
 import Contacts from '@/components/Contacts'
 
 export default {
-  components: {Contacts},
+  components: { Contacts },
   layout: 'default',
 }
 </script>

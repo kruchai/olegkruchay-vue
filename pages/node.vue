@@ -1,20 +1,22 @@
 <template>
-  <ErrorComponent :statusCode="errors.node.code"
-                  :heading="errors.node.heading"
-                  :description="errors.node.description"/>
+  <ErrorComponent
+    :statusCode="errors.node.code"
+    :heading="errors.node.heading"
+    :description="errors.node.description"
+  />
 </template>
 
 <script>
 import ErrorComponent from '@/components/ErrorComponent'
-import {errors} from '@/static/data/errors.json'
+import { errors } from '@/static/data/errors.json'
 
 export default {
-  components: {ErrorComponent},
+  components: { ErrorComponent },
   layout: 'default',
   data() {
     return {
-      errors
+      errors,
     }
-  }
+  },
 }
 </script>
