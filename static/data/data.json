@@ -1,7 +1,7 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.7.3",
+    "version": "0.7.4",
     "status": "βeta"
   },
   "license": {
@@ -11,22 +11,13 @@
       "title": "Creative Commons Attribution-ShareAlike 4.0 International License",
       "icons": [
         {
-          "faIcon": [
-            "fab",
-            "creative-commons"
-          ]
+          "faIcon": ["fab", "creative-commons"]
         },
         {
-          "faIcon": [
-            "fab",
-            "creative-commons-by"
-          ]
+          "faIcon": ["fab", "creative-commons-by"]
         },
         {
-          "faIcon": [
-            "fab",
-            "creative-commons-sa"
-          ]
+          "faIcon": ["fab", "creative-commons-sa"]
         }
       ]
     }
@@ -65,10 +56,7 @@
       },
       {
         "text": "Made with",
-        "faIcon": [
-          "far",
-          "heart"
-        ],
+        "faIcon": ["far", "heart"],
         "link": {
           "title": "by myself",
           "uri": "/cv.pdf"
@@ -85,50 +73,32 @@
     "socialNetworks": [
       {
         "uri": "https://instagram.com/olegkruchay",
-        "faIcon": [
-          "fab",
-          "instagram"
-        ],
+        "faIcon": ["fab", "instagram"],
         "class": "instagram"
       },
       {
         "uri": "https://linkedin.com/in/olegkruchay",
-        "faIcon": [
-          "fab",
-          "linkedin"
-        ],
+        "faIcon": ["fab", "linkedin"],
         "class": "linkedin"
       },
       {
         "uri": "https://facebook.com/olegkruchay",
-        "faIcon": [
-          "fab",
-          "facebook"
-        ],
+        "faIcon": ["fab", "facebook"],
         "class": "facebook"
       },
       {
         "uri": "https://drupal.org/u/scoutex",
-        "faIcon": [
-          "fab",
-          "drupal"
-        ],
+        "faIcon": ["fab", "drupal"],
         "class": "drupal"
       },
       {
         "uri": "https://codepen.io/olegscout",
-        "faIcon": [
-          "fab",
-          "codepen"
-        ],
+        "faIcon": ["fab", "codepen"],
         "class": "codepen"
       },
       {
         "uri": "https://github.com/olegscout",
-        "faIcon": [
-          "fab",
-          "github"
-        ],
+        "faIcon": ["fab", "github"],
         "class": "github"
       }
     ],
@@ -146,55 +116,37 @@
       {
         "title": "Ping me in Telegram",
         "uri": "https://t.me/olegkruchay",
-        "faIcon": [
-          "fab",
-          "telegram"
-        ],
+        "faIcon": ["fab", "telegram"],
         "class": "telegram"
       },
       {
         "title": "Watch my stories at Insta",
         "uri": "https://instagram.com/olegkruchay",
-        "faIcon": [
-          "fab",
-          "instagram"
-        ],
+        "faIcon": ["fab", "instagram"],
         "class": "instagram"
       },
       {
         "title": "Hire me in LinkedIn",
         "uri": "https://linkedin.com/in/olegkruchay",
-        "faIcon": [
-          "fab",
-          "linkedin"
-        ],
+        "faIcon": ["fab", "linkedin"],
         "class": "linkedin"
       },
       {
         "title": "Call me in Skype",
         "uri": "https://join.skype.com/invite/gEaqTmOriBg5",
-        "faIcon": [
-          "fab",
-          "skype"
-        ],
+        "faIcon": ["fab", "skype"],
         "class": "skype"
       },
       {
         "title": "Spam me directly",
         "uri": "mailto:okruchay@gmail.com",
-        "faIcon": [
-          "far",
-          "envelope"
-        ],
+        "faIcon": ["far", "envelope"],
         "class": ""
       },
       {
         "title": "React me in Facebook Messenger",
         "uri": "https://www.messenger.com/t/olegkruchay",
-        "faIcon": [
-          "fab",
-          "facebook-messenger"
-        ],
+        "faIcon": ["fab", "facebook-messenger"],
         "class": "messenger"
       }
     ]
@@ -219,79 +171,49 @@
     "pofessionalSkills": [
       {
         "title": "ECMAScript 6",
-        "faIcon": [
-          "fab",
-          "js"
-        ],
+        "faIcon": ["fab", "js"],
         "class": "js"
       },
       {
         "title": "ReactJS",
-        "faIcon": [
-          "fab",
-          "react"
-        ],
+        "faIcon": ["fab", "react"],
         "class": "react"
       },
       {
         "title": "VueJS",
-        "faIcon": [
-          "fab",
-          "vuejs"
-        ],
+        "faIcon": ["fab", "vuejs"],
         "class": "vue"
       },
       {
         "title": "NodeJS",
-        "faIcon": [
-          "fab",
-          "node-js"
-        ],
+        "faIcon": ["fab", "node-js"],
         "class": "node"
       },
       {
         "title": "Drupal 7 – 9",
-        "faIcon": [
-          "fab",
-          "drupal"
-        ],
+        "faIcon": ["fab", "drupal"],
         "class": "drupal"
       },
       {
         "title": "Php",
-        "faIcon": [
-          "fab",
-          "php"
-        ],
+        "faIcon": ["fab", "php"],
         "class": "php"
       },
       {
         "title": "Docker",
-        "faIcon": [
-          "fab",
-          "docker"
-        ],
+        "faIcon": ["fab", "docker"],
         "class": "docker"
       },
       {
         "title": "A Silicon Valley Technologies",
-        "faIcon": [
-          "fab",
-          "pied-piper-pp"
-        ],
+        "faIcon": ["fab", "pied-piper-pp"],
         "class": "pp"
       }
     ],
-    "softSkills": [
-      "english b2"
-    ],
+    "softSkills": ["english b2"],
     "hobby": {
       "title": "There is a list of my hobbies",
-      "listOfHobbies": [
-        "MMA",
-        "Boxing",
-        "Football"
-      ]
+      "listOfHobbies": ["MMA", "Boxing", "Football"]
     },
     "universityExperience": ""
   }
