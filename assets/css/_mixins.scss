@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
   grid-template-rows: repeat($rows, 1fr);
-  grid-template-columns:repeat($cols, 1fr);
+  grid-template-columns: repeat($cols, 1fr);
 }
 
 //@mixin grid-container-areas($cols: 1, $rows: 1, $visibleCols: 1) {

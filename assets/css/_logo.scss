@@ -2,25 +2,25 @@
 a {
   &.logo {
     text-decoration: none;
-    
+
     &:hover {
       svg {
         animation: heartbeat 1s infinite;
-  
+
         @media (min-width: 851px) {
           background: $main;
         }
-        
+
         .logo-main-word {
           fill: $main;
-          
+
           @media (min-width: 851px) {
             fill: $white;
           }
         }
       }
     }
-    
+
     &:before,
     &:after {
       content: none;
@@ -40,28 +40,22 @@ a {
 }
 
 @keyframes heartbeat {
-  0%
-  {
-    transform: scale( .95 );
+  0% {
+    transform: scale(0.95);
   }
-  20%
-  {
-    transform: scale( 1 );
+  20% {
+    transform: scale(1);
   }
-  40%
-  {
-    transform: scale( .95 );
+  40% {
+    transform: scale(0.95);
   }
-  60%
-  {
-    transform: scale( 1 );
+  60% {
+    transform: scale(1);
   }
-  80%
-  {
-    transform: scale( .95 );
+  80% {
+    transform: scale(0.95);
   }
-  100%
-  {
-    transform: scale( .95 );
+  100% {
+    transform: scale(0.95);
   }
 }

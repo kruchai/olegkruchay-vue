@@ -61,18 +61,18 @@
   @include grid-container;
   margin: 0 0 50px;
   padding: 30px 0;
-  
+
   @media (min-width: 851px) {
     margin: 20px 0 120px;
     padding: 30px 15px;
   }
-  
+
   &.col-2 {
     @media (min-width: 1200px) {
       @include grid-container(2);
     }
   }
-  
+
   &.col-3 {
     @media (min-width: 1200px) {
       @include grid-container(3);
@@ -85,27 +85,24 @@
   justify-content: space-around;
   margin: 0 0 50px;
   padding: 30px 0;
-  
+
   @media (min-width: 851px) {
     margin: 20px 0 120px;
     padding: 30px 15px;
   }
 
   &.bg {
-    background: linear-gradient(
-      rgba(254, 250, 246, 0.5) 2.42%,
-      rgba(241, 241, 241, 0.5) 100%
-    );
+    background: linear-gradient(rgba(254, 250, 246, 0.5) 2.42%, rgba(241, 241, 241, 0.5) 100%);
     border-radius: 0 0 26px 26px;
   }
 
   svg {
     font-size: 50px;
   }
-  
+
   &.wrapper-social {
     transition: all 0.3s ease-in-out;
-    
+
     @media (max-width: 850px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

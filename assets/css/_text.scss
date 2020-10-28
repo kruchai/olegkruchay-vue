@@ -3,11 +3,11 @@
   font-weight: 300;
   font-size: 30px;
   margin-bottom: 25px;
-  
+
   @media (min-width: 851px) {
     font-size: 40px;
   }
-  
+
   &.section {
     text-align: center;
     margin: 20px 0 10px;
@@ -15,25 +15,25 @@
     position: relative;
     display: inline-block;
     width: 100%;
-  
+
     @media (max-width: 850px) {
       font-size: 14px;
     }
-    
+
     @media (min-width: 851px) {
       font-size: 14px;
       margin: 50px 0;
     }
-    
+
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: -50px;
       height: 40px;
       width: 1px;
       left: 50%;
       background-color: #f08080;
-      
+
       // tweak
       transform: translateX(calc(-50% - 0.5px));
     }
@@ -46,7 +46,7 @@
   line-height: 1.5;
   font-size: 24px;
   margin: 50px 0 25px;
-  
+
   @media (min-width: 1200px) {
     font-size: 30px;
     margin: 0 0 25px;
@@ -58,7 +58,7 @@
   font-weight: bold;
   font-family: 'Patua One', cursive;
   line-height: 0.9;
-  
+
   @media (min-width: 851px) {
     font-size: 65px;
   }
@@ -70,7 +70,7 @@
 .ok-text {
   line-height: 1.7;
   font-size: 16px;
-  
+
   @media (min-width: 851px) {
     line-height: 1.5;
   }

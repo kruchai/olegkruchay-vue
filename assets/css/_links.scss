@@ -6,61 +6,61 @@
   line-height: 1;
   display: inline-block;
   z-index: 1;
-  
+
   &.active {
     padding: 0 20px 0 10px;
     background: linear-gradient(to right, $white, #eee);
     border-radius: 0 0 10px;
-    
+
     &:before {
       max-width: calc(100% - 30px);
       left: 10px;
     }
   }
-  
+
   &:before {
-    content: "";
+    content: '';
     width: 100%;
     height: 1px;
     background-color: #999;
     position: absolute;
     left: 0;
     bottom: 1px;
-    transition: 1.3s cubic-bezier(0.65,0,.076,1);
+    transition: 1.3s cubic-bezier(0.65, 0, 0.076, 1);
     z-index: 0;
   }
-  
+
   &:after {
-    content: "";
+    content: '';
     width: 20%;
     height: 30%;
     background-color: transparent;
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.75s cubic-bezier(0.65,0,.076,1);
+    transition: 0.75s cubic-bezier(0.65, 0, 0.076, 1);
     z-index: 0;
   }
-  
+
   &:hover {
     &:before {
-      content: "";
+      content: '';
       width: 0;
     }
-    
+
     &:after {
-      content: "";
+      content: '';
       width: calc(100% - 15px);
       background-color: $main;
     }
   }
-  
+
   &.social {
     transition: none;
     color: $grey-main-cta;
     font-size: 22px;
     padding: 5px;
-    
+
     &:before,
     &:after {
       content: none;
@@ -81,38 +81,38 @@
   display: inline-block;
   width: 100%;
   max-width: calc(80vw);
-  
+
   @media (min-width: 851px) {
     max-width: 270px;
   }
-  
+
   &:before {
     content: none;
   }
-  
+
   // hover
   &:hover {
     @media (min-width: 851px) {
       &:after {
         content: none;
       }
-      
+
       .circle {
         &:before {
           width: 100%;
           background-color: $main;
         }
-        
+
         .button-text {
           color: $white;
         }
       }
-      
+
       .icon-wrapper {
         .icon {
           &.download {
             transform: rotate(90deg);
-            
+
             &:before {
               left: calc(50% + 4px);
             }
@@ -121,10 +121,10 @@
               width: 20px;
             }
           }
-          
+
           &.letter {
             transform: rotate(90deg);
-            
+
             &:before {
               left: calc(50% - 6px);
               width: 11px;
@@ -135,7 +135,7 @@
               border-color: $white;
             }
           }
-          
+
           &.download,
           &.letter {
             transform: translateX(10px) rotate(90deg);
@@ -144,13 +144,13 @@
       }
     }
   }
-  
+
   // static
   .circle {
     height: 48px;
     position: relative;
     display: flex;
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -160,19 +160,19 @@
       width: 48px;
       height: 48px;
       background-color: #555555;
-      transition: all 0.5s cubic-bezier(0.65,0,.076,1);
+      transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
     }
   }
-  
+
   .icon-wrapper {
     position: relative;
-    
+
     .icon {
       position: relative;
       min-width: 48px;
       height: 48px;
       display: inline-block;
-      
+
       &:before {
         content: '';
         position: absolute;
@@ -184,10 +184,10 @@
         border-right: 2px solid $white;
         transform: translate(-50%, -50%) rotate(45deg);
       }
-      
+
       &.download {
-        transition: all 0.5s cubic-bezier(0.65,0,.076,1);
-        
+        transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+
         &:before {
           transition: all 0.2s ease-in;
         }
@@ -204,8 +204,8 @@
         }
       }
       &.letter {
-        transition: all 0.5s cubic-bezier(0.65,0,.076,1);
-        
+        transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+
         &:before {
           transition: all 0.2s ease-in;
         }
@@ -223,7 +223,7 @@
       }
     }
   }
-  
+
   .button-text {
     position: relative;
     display: inline-block;
@@ -235,28 +235,28 @@
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    transition: all 0.5s cubic-bezier(0.65,0,.076,1);
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
   }
-  
+
   @media (max-width: 850px) {
     // duplicated from hover
-    
+
     .circle {
       &:before {
         width: 100%;
         background-color: rgba(119, 119, 119, 0.3);
       }
-    
+
       .button-text {
         color: $white;
       }
     }
-  
+
     .icon-wrapper {
       .icon {
         &.download {
           transform: rotate(90deg);
-        
+
           &:before {
             left: calc(50% + 4px);
           }
@@ -265,10 +265,10 @@
             width: 20px;
           }
         }
-      
+
         &.letter {
           transform: rotate(90deg);
-        
+
           &:before {
             left: calc(50% - 6px);
             width: 11px;
@@ -279,7 +279,7 @@
             border-color: $white;
           }
         }
-        
+
         &.download,
         &.letter {
           transform: translateX(10px) rotate(90deg);
@@ -294,7 +294,7 @@
   transition: all 0.3s ease-in-out;
   color: $grey-main-cta;
   font-size: 40px;
-  
+
   &:hover {
     &.instagram {
       color: #c13584;
