@@ -1,20 +1,22 @@
 <template>
-  <ErrorComponent :statusCode="errors.accessDenied.code"
-                  :heading="errors.accessDenied.heading"
-                  :description="errors.accessDenied.description"/>
+  <ErrorComponent
+    :statusCode="errors.accessDenied.code"
+    :heading="errors.accessDenied.heading"
+    :description="errors.accessDenied.description"
+  />
 </template>
 
 <script>
 import ErrorComponent from '@/components/ErrorComponent'
-import {errors} from '@/static/data/errors.json'
+import { errors } from '@/static/data/errors.json'
 
 export default {
-  components: {ErrorComponent},
+  components: { ErrorComponent },
   layout: 'default',
   data() {
     return {
-      errors
+      errors,
     }
-  }
+  },
 }
 </script>

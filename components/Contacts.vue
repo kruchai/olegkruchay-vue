@@ -45,14 +45,14 @@ export default {
     return {
       contacts,
       copied: null,
-    };
+    }
   },
   methods: {
     onCopy: function () {
-      this.copied = true;
+      this.copied = true
     },
     onError: function () {
-      alert('Failed to copy');
+      alert('Failed to copy')
     },
   },
 }

@@ -6,7 +6,7 @@
 import AboutMe from '@/components/AboutMe.vue'
 
 export default {
-  components: {AboutMe},
+  components: { AboutMe },
   layout: 'default',
 }
 </script>

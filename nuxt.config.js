@@ -11,6 +11,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
+        // eslint-disable-next-line max-len
         content: 'Front-end web developer (React, Vue, Drupal 7-9). Based in Kyiv, Ukraine. Social: @olegkruchay. Mail: okruchay@gmail.com'
       },
       {
@@ -19,6 +20,7 @@ export default {
       },
       {
         property: 'og:description',
+        // eslint-disable-next-line max-len
         content: 'Front-end web developer (React, Vue, Drupal 7-9). Based in Kyiv, Ukraine. Social: @olegkruchay. Mail: okruchay@gmail.com'
       },
       {
@@ -48,7 +50,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '180x180', type: 'image/png', href: '/favicons/apple-touch-icon.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', type: 'image/png',
+        href: '/favicons/apple-touch-icon.png'
+      },
       { rel: 'icon', sizes: '32x32', type: 'image/png', href: '/favicons/favicon-32x32.png' },
       { rel: 'icon', sizes: '16x16', type: 'image/png', href: '/favicons/favicon-16x16.png' },
       { rel: 'manifest', href: '/favicons/site.webmanifest' },
@@ -78,6 +82,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics',
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       icons: {
@@ -170,5 +175,9 @@ export default {
     webp: {
       quality: 85
     }
+  },
+  
+  googleAnalytics: {
+    id: 'UA-131497403-1'
   }
 }

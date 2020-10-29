@@ -5,31 +5,27 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: ". first first first first first first first first .";
+  grid-template-areas: '. first first first first first first first first .';
   align-items: center;
   padding: 50px 0;
-  
+
   @media (min-width: 1200px) {
-    grid-template-areas:
-      ". . . first first first first . . .";
+    grid-template-areas: '. . . first first first first . . .';
   }
-  
+
   &.wide {
     @media (min-width: 1200px) {
-      grid-template-areas:
-        ". first first first first first first first first .";
+      grid-template-areas: '. first first first first first first first first .';
     }
   }
-  
+
   &.extra-section {
     @media (min-width: 851px) {
-      grid-template-areas:
-        ". . first first first first first first . .";
+      grid-template-areas: '. . first first first first first first . .';
     }
-    
+
     @media (min-width: 1600px) {
-      grid-template-areas:
-        ". . first first first first first first . .";
+      grid-template-areas: '. . first first first first first first . .';
     }
   }
 }
@@ -38,7 +34,7 @@
   position: relative;
   z-index: 3;
   color: #777;
-  
+
   &.first {
     grid-area: first;
   }

@@ -7,23 +7,15 @@
     </div>
 
     <!--  Column 2  -->
-    <div class="ok-column second">
-      &copy; {{ footer.copyright }} {{ new Date().getFullYear() }}
-    </div>
+    <div class="ok-column second">&copy; {{ footer.copyright }} {{ new Date().getFullYear() }}</div>
 
     <!--  Column 3  -->
     <div class="ok-column third">
       <div class="ok-description">
-        <div
-          class="footer-description"
-          v-for="(description, i) in footer.descriptions"
-          :key="i"
-        >
+        <div class="footer-description" v-for="(description, i) in footer.descriptions" :key="i">
           {{ description.text }}
           <fa v-if="description.faIcon" :icon="description.faIcon" />
-          <a :href="description.link.uri" class="ok-link">{{
-            description.link.title
-          }}</a>
+          <a :href="description.link.uri" class="ok-link">{{ description.link.title }}</a>
         </div>
       </div>
       <div class="license">
@@ -59,8 +51,8 @@
 </template>
 
 <script>
-import { site, license, footer } from '@/static/data/data.json';
-import FooterLogo from '~/assets/images/logo-full.svg?inline';
+import { site, license, footer } from '@/static/data/data.json'
+import FooterLogo from '~/assets/images/logo-full.svg?inline'
 
 export default {
   name: 'Footer',
@@ -70,7 +62,7 @@ export default {
       site,
       license,
       footer,
-    };
+    }
   },
-};
+}
 </script>

@@ -1,6 +1,6 @@
 {
   "name": "olegkruchay-nuxt",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/eslint-config": "^4.0.0",
     "@nuxtjs/robots": "^2.4.2",
     "core-js": "^3.6.5",
     "lazysizes": "^5.2.2",
@@ -26,15 +27,21 @@
     "@nuxt/types": "^2.14.5",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/google-fonts": "^1.0.3",
     "@nuxtjs/svg": "^0.1.12",
-    "eslint-config-prettier": "^6.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
     "node-sass": "^4.14.1",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
     "sass-loader": "^10.0.2"
   }
 }

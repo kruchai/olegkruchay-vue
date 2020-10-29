@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  &::before, &::after {
+  &::before,
+  &::after {
     box-sizing: border-box;
   }
 }
@@ -23,7 +24,7 @@ body {
 
 .ok-show {
   display: flex;
-  
+
   &.mobile {
     @media (min-width: 851px) {
       display: none;
@@ -48,7 +49,7 @@ body {
 
 .ok-hide {
   display: none;
-  
+
   &.mobile {
     @media (min-width: 851px) {
       display: flex;
@@ -92,27 +93,25 @@ body {
 // about page
 .page--about {
   .ok-container {
-    
     &.col-2 {
       grid-template-areas:
-        "first"
-        "second";
-      
+        'first'
+        'second';
+
       @media (min-width: 1200px) {
-        grid-template-areas:
-          "first second";
+        grid-template-areas: 'first second';
       }
-      
+
       .ok-column {
         &:first-child {
           display: flex;
           justify-content: center;
-          
+
           figure,
           .picture {
             margin: 0;
           }
-  
+
           picture {
             > * {
               filter: drop-shadow(2px 4px 6px black) opacity(0.8);
@@ -120,7 +119,7 @@ body {
               height: 256px;
               border-radius: 26px;
               object-fit: contain;
-  
+
               @media (min-width: 851px) {
                 width: 384px;
                 height: 384px;
@@ -134,7 +133,7 @@ body {
                 height: 384px;
               }
             }
-            
+
             img {
               filter: drop-shadow(2px 4px 6px black) opacity(0.8);
             }
@@ -149,7 +148,7 @@ body {
 .page--contacts {
   .email {
     font-size: 25px;
-    
+
     @media (min-width: 851px) {
       font-size: 40px;
       cursor: pointer;
@@ -163,18 +162,18 @@ body {
   border-radius: 0 0 26px 26px;
   padding: 25px 0;
   width: 100%;
-  
+
   .career--item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 20px 15px;
     grid-template-areas:
-      "first third"
-      "second second";
+      'first third'
+      'second second';
     grid-gap: 12px;
     font-size: 12px;
-    
+
     @media (min-width: 851px) {
       padding: 30px;
       font-size: 16px;
@@ -183,16 +182,16 @@ body {
       padding: 20px 5vw;
       grid-template-columns: 200px 1fr auto;
       grid-template-rows: 1fr;
-      grid-template-areas: "first second third";
+      grid-template-areas: 'first second third';
       grid-gap: 12px;
     }
     @media (min-width: 1600px) {
       grid-template-columns: 250px 1fr auto;
     }
-  
+
     .second {
       text-align: left;
-      
+
       @media (max-width: 850px) {
         font-weight: 700;
         font-size: 13px;
@@ -209,14 +208,14 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  
+
   &:hover {
     .tooltip--text {
       visibility: visible;
       opacity: 1;
     }
   }
-  
+
   .tooltip--text {
     visibility: hidden;
     width: auto;
@@ -234,9 +233,9 @@ body {
     transition: opacity 0.2s ease-in;
     font-size: 14px;
     white-space: nowrap;
-    
+
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 100%;
       left: 50%;
