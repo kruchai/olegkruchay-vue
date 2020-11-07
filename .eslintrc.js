@@ -1,18 +1,20 @@
-{
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": false,
-    "codeFrame": false
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    node: true,
   },
-  "extends": ["@nuxtjs", "prettier"],
-  "env": {
-    "browser": true,
-    "jest": true
+  parserOptions: {
+    parser: 'babel-eslint',
   },
-  "rules": {
-    "max-len": ["error", {"code": 100}],
-    "prefer-promise-reject-errors": ["off"],
-    "no-return-assign": ["off"]
-  }
+  extends: [
+    '@nuxtjs',
+    'prettier',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
+  ],
+  plugins: ['prettier'],
+  // add your custom rules here
+  rules: {},
 }
