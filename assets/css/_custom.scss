@@ -114,7 +114,7 @@ body {
 
           picture {
             > * {
-              filter: drop-shadow(2px 4px 6px black) opacity(0.8);
+              filter: opacity(0.8);
               width: 256px;
               height: 256px;
               border-radius: 26px;
@@ -135,7 +135,7 @@ body {
             }
 
             img {
-              filter: drop-shadow(2px 4px 6px black) opacity(0.8);
+              filter: opacity(0.8);
             }
           }
         }

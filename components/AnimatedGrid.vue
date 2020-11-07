@@ -1,6 +1,6 @@
 <template>
   <div class="animated-grid-container">
-    <div class="line" v-for="line in 10"></div>
+    <div v-for="line in 10" :key="line" class="line"></div>
   </div>
 </template>
 
