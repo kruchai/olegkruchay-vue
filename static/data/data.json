@@ -1,7 +1,7 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.7.4",
+    "version": "0.7.5",
     "status": "βeta"
   },
   "license": {
@@ -59,7 +59,7 @@
         "faIcon": ["far", "heart"],
         "link": {
           "title": "by myself",
-          "uri": "/cv.pdf"
+          "uri": "/about"
         }
       },
       {
@@ -159,14 +159,14 @@
       "image": "ok.jpg"
     },
     "preStory": {
-      "greeting": "I'm Oleg, 24 y.o. front-end web developer working remotely for",
+      "greeting": "I'm Oleg [aka Scout], 24 y.o. front-end web developer working remotely for",
       "currectCompany": {
         "name": "Sceel.io",
         "uri": "https://sceel.io",
-        "techStack": "Drupal 8"
+        "techStack": "Drupal 8 / ReactJS"
       }
     },
-    "story": "I have been working as web developer since 2016, when I was 3rd year student. In 2019 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating the design solutions into the site.",
+    "story": "I have been working as web developer since 2016, when I was 3rd year student. In 2018 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating the design solutions into the site.",
     "location": "Kyiv, Ukraine 🇺🇦",
     "pofessionalSkills": [
       {

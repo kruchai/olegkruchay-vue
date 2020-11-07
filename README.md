@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7.4 ßeta```
+###### 🎭🎲️ Current version ```v0.7.5 ßeta```
 
 [![The NEW olegkruchay.com web-site](./static/public/promo-olegkruchay-com.gif "The NEW olegkruchay.com web-site")](https://olegkruchay.com)
 
@@ -69,5 +69,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Migration from ```VueJS v2 to v3```
   - [VueJS 3 | Reliesed ](http://v3.vuejs.org/)
   - [NuxtJS 3](https://nuxtjs.org) 
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Hosted on [Netlify](https://netlify.com). Made by Oleg Kruchay.
