@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7.5 ßeta```
+###### 🎭🎲️ Current version ```v0.7.6 ßeta```
 
 [![The NEW olegkruchay.com web-site](./static/public/promo-olegkruchay-com.gif "The NEW olegkruchay.com web-site")](https://olegkruchay.com)
 
