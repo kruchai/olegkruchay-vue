@@ -1,0 +1,12 @@
+{
+  "header": {
+    "aboutLink": {
+      "aboutLinkUri": "/about",
+      "aboutLinkTitle": "about"
+    },
+    "contactsLink": {
+      "contactsLinkUri": "/contacts",
+      "contactsLinkTitle": "contacts"
+    }
+  }
+}

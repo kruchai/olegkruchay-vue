@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { header } from '~/static/data/data.json'
+import { header } from '~/static/data/header.json'
 import HeaderLogo from '~/assets/images/logo.svg?inline'
 
 export default {

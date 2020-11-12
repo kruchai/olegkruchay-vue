@@ -1,0 +1,46 @@
+{
+  "contacts": {
+    "title": "Contact Me",
+    "mail": "o.kruchay@gmail.com",
+    "id": "olegkruchay",
+    "msgSectionTitle": "Message Me",
+    "messengers": [
+      {
+        "title": "Ping me in Telegram",
+        "uri": "https://t.me/olegkruchay",
+        "faIcon": ["fab", "telegram"],
+        "class": "telegram"
+      },
+      {
+        "title": "Watch my stories at Insta",
+        "uri": "https://instagram.com/olegkruchay",
+        "faIcon": ["fab", "instagram"],
+        "class": "instagram"
+      },
+      {
+        "title": "Hire me in LinkedIn",
+        "uri": "https://linkedin.com/in/olegkruchay",
+        "faIcon": ["fab", "linkedin"],
+        "class": "linkedin"
+      },
+      {
+        "title": "Call me in Skype",
+        "uri": "https://join.skype.com/invite/gEaqTmOriBg5",
+        "faIcon": ["fab", "skype"],
+        "class": "skype"
+      },
+      {
+        "title": "Spam me directly",
+        "uri": "mailto:okruchay@gmail.com",
+        "faIcon": ["far", "envelope"],
+        "class": ""
+      },
+      {
+        "title": "React me in Facebook Messenger",
+        "uri": "https://www.messenger.com/t/olegkruchay",
+        "faIcon": ["fab", "facebook-messenger"],
+        "class": "messenger"
+      }
+    ]
+  }
+}

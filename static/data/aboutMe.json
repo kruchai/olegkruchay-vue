@@ -1,0 +1,68 @@
+{
+  "aboutMe": {
+    "title": "About Me",
+    "availabilityStatus": "not able",
+    "portraitPhoto": {
+      "alt": "Oleg Kruchay portrait",
+      "image": "ok.jpg"
+    },
+    "preStory": {
+      "greeting": "I'm Oleg [aka Scout], 24 y.o. front-end web developer working remotely for",
+      "currectCompany": {
+        "name": "Sceel.io",
+        "uri": "https://sceel.io",
+        "techStack": "Drupal 8 / ReactJS"
+      }
+    },
+    "story": "I have been working as web developer since 2016, when I was 3rd year student. In 2018 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating the design solutions into the site.",
+    "location": "Kyiv, Ukraine 🇺🇦",
+    "pofessionalSkills": [
+      {
+        "title": "ECMAScript 6",
+        "faIcon": ["fab", "js"],
+        "class": "js"
+      },
+      {
+        "title": "ReactJS",
+        "faIcon": ["fab", "react"],
+        "class": "react"
+      },
+      {
+        "title": "VueJS",
+        "faIcon": ["fab", "vuejs"],
+        "class": "vue"
+      },
+      {
+        "title": "NodeJS",
+        "faIcon": ["fab", "node-js"],
+        "class": "node"
+      },
+      {
+        "title": "Drupal 7 – 9",
+        "faIcon": ["fab", "drupal"],
+        "class": "drupal"
+      },
+      {
+        "title": "Php",
+        "faIcon": ["fab", "php"],
+        "class": "php"
+      },
+      {
+        "title": "Docker",
+        "faIcon": ["fab", "docker"],
+        "class": "docker"
+      },
+      {
+        "title": "A Silicon Valley Technologies",
+        "faIcon": ["fab", "pied-piper-pp"],
+        "class": "pp"
+      }
+    ],
+    "softSkills": ["english b2"],
+    "hobby": {
+      "title": "There is a list of my hobbies",
+      "listOfHobbies": ["MMA", "Boxing", "Football"]
+    },
+    "universityExperience": ""
+  }
+}

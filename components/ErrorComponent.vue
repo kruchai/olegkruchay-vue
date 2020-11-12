@@ -20,6 +20,7 @@
 
 <script>
 import { errors } from '@/static/data/errors.json'
+import { seo } from '@/static/data/seo'
 import BackToHome from '@/components/BackToHome'
 
 export default {
@@ -29,6 +30,12 @@ export default {
   data() {
     return {
       errors,
+      seo,
+    }
+  },
+  head() {
+    return {
+      title: seo.error.title + ' ' + this.statusCode,
     }
   },
 }

@@ -71,7 +71,7 @@
 </template>
 
 <script>
-import { aboutMe } from '@/static/data/data.json'
+import { aboutMe } from '@/static/data/aboutMe.json'
 import { career } from '@/static/data/career.json'
 import BackToHome from '@/components/BackToHome'
 

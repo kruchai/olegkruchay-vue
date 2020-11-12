@@ -51,7 +51,9 @@
 </template>
 
 <script>
-import { site, license, footer } from '@/static/data/data.json'
+import { site } from '@/static/data/data.json'
+import { license } from '@/static/data/license.json'
+import { footer } from '@/static/data/footer.json'
 import FooterLogo from '~/assets/images/logo-full.svg?inline'
 
 export default {

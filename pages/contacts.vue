@@ -4,9 +4,20 @@
 
 <script>
 import Contacts from '@/components/Contacts'
+import { seo } from '@/static/data/seo'
 
 export default {
   components: { Contacts },
   layout: 'default',
+  data() {
+    return {
+      seo,
+    }
+  },
+  head() {
+    return {
+      title: seo.contacts.title,
+    }
+  },
 }
 </script>
