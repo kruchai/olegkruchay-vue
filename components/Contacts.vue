@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { contacts } from '@/static/data/data.json'
+import { contacts } from '@/static/data/contacts.json'
 
 export default {
   name: 'Contacts',
