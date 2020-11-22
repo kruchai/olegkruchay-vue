@@ -1,14 +1,17 @@
 {
   "name": "olegkruchay-nuxt",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
+    "prettier:all:vue": " prettier -w components/* layouts/* pages/*",
+    "lint:all:vue": "eslint --fix components/*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "plint:vue": "yarn lint:all:vue && yarn prettier:all:vue"
   },
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
@@ -23,13 +26,13 @@
     "vue-clipboard2": "^0.3.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
     "@aceforth/nuxt-optimized-images": "^1.3.0",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@nuxt/types": "^2.14.5",
     "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/google-fonts": "^1.0.3",
@@ -43,6 +46,7 @@
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
     "node-sass": "^4.14.1",
+    "olegkruchay-sync": "^0.1.1",
     "prettier": "^2.1.2",
     "pretty-quick": "^3.1.0",
     "sass-loader": "^10.0.2"

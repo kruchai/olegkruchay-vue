@@ -4,16 +4,16 @@
       <h1 class="ok-title section">{{ contacts.title }}</h1>
       <div class="ok-box wrapper-email">
         <div
-          class="tooltip email"
           v-clipboard:copy="contacts.mail"
           v-clipboard:success="onCopy"
           v-clipboard:error="onError"
+          class="tooltip email"
         >
           {{ contacts.mail }}
-          <span class="tooltip--text" v-if="copied === true">
+          <span v-if="copied === true" class="tooltip--text">
             <code>Copied</code>
           </span>
-          <span class="tooltip--text" v-if="copied !== true">
+          <span v-if="copied !== true" class="tooltip--text">
             <code>Copy to clipboard</code>
           </span>
         </div>
@@ -48,10 +48,10 @@ export default {
     }
   },
   methods: {
-    onCopy: function () {
+    onCopy() {
       this.copied = true
     },
-    onError: function () {
+    onError() {
       alert('Failed to copy')
     },
   },

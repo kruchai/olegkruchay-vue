@@ -7636,6 +7636,11 @@ object.values@^1.1.0, object.values@^1.1.1:
     function-bind "^1.1.1"
     has "^1.0.3"
 
+olegkruchay-sync@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/olegkruchay-sync/-/olegkruchay-sync-0.1.1.tgz#e3aa56972b21881e3dc5c69c3d8d4c7083dd7f1b"
+  integrity sha512-EPxotKu3/n4vgWGJicmQfB3IjHuSWjZdj8eWaFviePeIRq40qZUXduAp83jnkw2weYdgWTW6TeXNZbpqqnbsGg==
+
 on-finished@^2.3.0, on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"

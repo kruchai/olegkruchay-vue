@@ -40,7 +40,7 @@
 
       <h2 class="ok-title section">{{ 'Professional Skills' }}</h2>
       <div class="ok-box wrapper-social">
-        <span class="tooltip" v-for="(skill, i) in aboutMe.pofessionalSkills" :key="i">
+        <span v-for="(skill, i) in aboutMe.pofessionalSkills" :key="i" class="tooltip">
           <fa :class="'social ' + skill.class" :icon="skill.faIcon" />
           <span class="tooltip--text">
             <code>{{ skill.title }}</code>
@@ -51,7 +51,7 @@
       <h2 class="ok-title section">{{ 'Career' }}</h2>
       <div class="ok-box">
         <div class="career--items">
-          <div class="career--item" v-for="(item, i) in career" :key="i">
+          <div v-for="(item, i) in career" :key="i" class="career--item">
             <span class="ok-column first">
               <span>{{ item.startDate.month + ' ' + item.startDate.year }}</span>
               <span>{{ ' – ' }}</span>
@@ -73,11 +73,9 @@
 <script>
 import { aboutMe } from '@/static/data/aboutMe.json'
 import { career } from '@/static/data/career.json'
-import BackToHome from '@/components/BackToHome'
 
 export default {
   name: 'AboutMe',
-  components: { BackToHome },
   data() {
     return {
       aboutMe,
