@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7.6 ßeta```
+###### 🎭🎲️ Current version ```v0.7.7 ßeta```
 
 [![The NEW olegkruchay.com web-site](./static/public/promo-olegkruchay-com.gif "The NEW olegkruchay.com web-site")](https://olegkruchay.com)
 
@@ -26,6 +26,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ### 💎 Features 
 
 - Made on NuxtJS (VueJS)
+- Using the [olegkruchay-sync](https://classic.yarnpkg.com/en/package/olegkruchay-sync) NPM package for syncronizing reusable components/data between PET-projects
 - 10-section based CSS Grid
 - Animations by CSS, AnimeJS
 - SSR
