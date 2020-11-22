@@ -1,12 +1,12 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.7.6",
+    "version": "0.7.7",
     "status": "βeta"
   },
   "main": {
-    "greeting": "Hey, it's Oleg",
-    "message": "I'm creating the web interfaces",
+    "greeting": "Hello, I'm Oleg",
+    "message": "I create modern web applications",
     "cvLink": {
       "cvLinkUri": "/cv.pdf",
       "cvLinkTitle": "Download my cv"
