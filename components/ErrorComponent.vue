@@ -19,14 +19,27 @@
 </template>
 
 <script>
-import { errors } from '@/static/data/errors.json'
-import { seo } from '@/static/data/seo'
-import BackToHome from '@/components/BackToHome'
+import { errors } from '~/static/data/errors.json'
+import { seo } from '~/static/data/seo'
+import BackToHome from '~/components/BackToHome'
 
 export default {
   name: 'ErrorComponent',
   components: { BackToHome },
-  props: ['statusCode', 'heading', 'description'],
+  props: {
+    statusCode: {
+      type: Number,
+      required: true,
+    },
+    heading: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       errors,

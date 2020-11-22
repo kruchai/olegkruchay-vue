@@ -12,7 +12,7 @@
     <!--  Column 3  -->
     <div class="ok-column third">
       <div class="ok-description">
-        <div class="footer-description" v-for="(description, i) in footer.descriptions" :key="i">
+        <div v-for="(description, i) in footer.descriptions" :key="i" class="footer-description">
           {{ description.text }}
           <fa v-if="description.faIcon" :icon="description.faIcon" />
           <a :href="description.link.uri" class="ok-link">{{ description.link.title }}</a>
@@ -51,10 +51,10 @@
 </template>
 
 <script>
-import { site } from '@/static/data/data.json'
-import { license } from '@/static/data/license.json'
-import { footer } from '@/static/data/footer.json'
-import FooterLogo from '~/assets/images/logo-full.svg?inline'
+import { license } from 'olegkruchay-sync/static/data/license.json'
+import { footer } from 'olegkruchay-sync/static/data/footer.json'
+import FooterLogo from 'olegkruchay-sync/assets/images/logo-full.svg?inline'
+import { site } from '~/static/data/data.json'
 
 export default {
   name: 'Footer',
