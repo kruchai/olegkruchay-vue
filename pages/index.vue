@@ -19,5 +19,8 @@ export default Vue.extend({
       title: seo.home.title,
     }
   },
+  transition: {
+    name: 'intro',
+  },
 })
 </script>

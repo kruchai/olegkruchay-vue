@@ -19,5 +19,8 @@ export default {
       title: seo.contacts.title,
     }
   },
+  transition: {
+    name: 'intro',
+  },
 }
 </script>

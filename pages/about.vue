@@ -19,5 +19,8 @@ export default {
       title: seo.aboutMe.title,
     }
   },
+  transition: {
+    name: 'intro',
+  },
 }
 </script>
