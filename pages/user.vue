@@ -1,9 +1,11 @@
 <template>
-  <AboutMe />
+  <main class="ok-page page--about">
+    <AboutMe />
+  </main>
 </template>
 
-<script lang="ts">
-import AboutMe from '@/components/AboutMe.vue'
+<script>
+import AboutMe from '~/components/AboutMe.vue'
 
 export default {
   components: { AboutMe },

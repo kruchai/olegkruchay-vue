@@ -1,5 +1,7 @@
 <template>
-  <AboutMe />
+  <main class="ok-page page--about">
+    <AboutMe />
+  </main>
 </template>
 
 <script>

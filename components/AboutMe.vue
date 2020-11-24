@@ -1,5 +1,5 @@
 <template>
-  <main class="ok-section--main extra-section page--about">
+  <div class="ok-section--main extra-section">
     <div class="ok-column first">
       <h3 class="ok-title section">{{ aboutMe.title }}</h3>
       <div class="ok-container col-2">
@@ -7,16 +7,16 @@
           <figure class="picture">
             <picture>
               <source
-                :data-srcset="require(`@/assets/images/${aboutMe.portraitPhoto.image}`) + '?webp'"
+                :data-srcset="require(`~/assets/images/${aboutMe.portraitPhoto.image}`) + '?webp'"
                 type="image/webp"
               />
               <source
-                :data-srcset="require(`@/assets/images/${aboutMe.portraitPhoto.image}`)"
+                :data-srcset="require(`~/assets/images/${aboutMe.portraitPhoto.image}`)"
                 type="image/jpeg"
               />
               <img
-                :data-src="require(`@/assets/images/ok-placeholder.jpg`)"
-                :src="require(`@/assets/images/ok-placeholder.jpg`)"
+                :data-src="require(`~/assets/images/ok-placeholder.jpg`)"
+                :src="require(`~/assets/images/ok-placeholder.jpg`)"
                 class="lazyload"
                 :alt="aboutMe.portraitPhoto.alt"
               />
@@ -67,12 +67,12 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
-import { aboutMe } from '@/static/data/aboutMe.json'
-import { career } from '@/static/data/career.json'
+import { aboutMe } from '~/static/data/aboutMe.json'
+import { career } from '~/static/data/career.json'
 
 export default {
   name: 'AboutMe',

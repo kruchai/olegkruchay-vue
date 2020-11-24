@@ -1,5 +1,5 @@
 <template>
-  <main class="ok-section--main page--contacts">
+  <div class="ok-section--main">
     <div class="ok-column first">
       <h1 class="ok-title section">{{ contacts.title }}</h1>
       <div class="ok-box wrapper-email">
@@ -33,11 +33,11 @@
         </a>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
-import { contacts } from '@/static/data/contacts.json'
+import { contacts } from '~/static/data/contacts.json'
 
 export default {
   name: 'Contacts',

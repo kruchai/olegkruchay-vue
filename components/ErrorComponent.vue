@@ -1,5 +1,5 @@
 <template>
-  <main class="ok-section--main">
+  <div class="ok-section--main">
     <div class="ok-column first">
       <div v-if="statusCode === 404">
         <span class="ok-title">{{ errors.notFound.heading }} 🗿</span>
@@ -15,7 +15,7 @@
       </div>
       <BackToHome />
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
