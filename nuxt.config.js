@@ -184,4 +184,6 @@ export default {
   googleAnalytics: {
     id: 'UA-131497403-1',
   },
+
+  pageTransition: 'intro',
 }
