@@ -35,7 +35,7 @@
 
 <script>
 import { header } from 'olegkruchay-sync/static/data/header.json'
-import HeaderLogo from '~/assets/images/logo.svg?inline'
+import HeaderLogo from 'olegkruchay-sync/assets/images/logo.svg?inline'
 
 export default {
   name: 'Header',

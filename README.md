@@ -1,6 +1,6 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7.7 ßeta```
+###### 🎭🎲️ Current version ```v0.7.8 ßeta```
 
 [![The NEW olegkruchay.com web-site](./static/public/promo-olegkruchay-com.gif "The NEW olegkruchay.com web-site")](https://olegkruchay.com)
 
@@ -28,7 +28,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Made on NuxtJS (VueJS)
 - Using the [olegkruchay-sync](https://classic.yarnpkg.com/en/package/olegkruchay-sync) NPM package for syncronizing reusable components/data between PET-projects
 - 10-section based CSS Grid
-- Animations by CSS, AnimeJS
+- NuxtJS / VueJS Transitions
 - SSR
 - Error pages
 - Drupal error pages relations
@@ -36,6 +36,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
     
 #### 🧨 Major updates 
+- [olegkruchay-sync](https://classic.yarnpkg.com/en/package/olegkruchay-sync) NPM package
+    - starts from version ```v0.7.7```
 - Main pages: Home, About, Contacts
     - starts from version ```v0.7```
 - Moving the G fonts into the separate library.
@@ -49,8 +51,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - certificates on the site.
 - special version of my cv
 - [Dynamic gradient text function](https://www.sitepoint.com/dynamic-gradient-text-function-sass/)
-- Adding the screenshots into Readme file
-- Adding the log with features into Readme.md
+- Adding the log with features into CHANGELOG.md
 - All the icons of hovers should be super ellipse using: 
   - [CSS pseudo classes](http://jsfiddle.net/Lor0znhc/2/)
   - [SVG](https://medium.com/@nikolskayaolia/an-easy-way-to-implement-smooth-shapes-such-as-superellipse-and-squircle-into-a-user-interface-a5ba4e1139ed)
@@ -60,7 +61,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   - starts from version ```v0.5```
 - [VueJS](https://vuejs.org)
 - ECMAScript 2020, JSON
-- TypeScript
 - HTML template
 - SCSS (Sass preprocessor)
 - Google Analytics
@@ -70,6 +70,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Migration from ```VueJS v2 to v3```
   - [VueJS 3 | Reliesed ](http://v3.vuejs.org/)
   - [NuxtJS 3](https://nuxtjs.org) 
+  - TypeScript
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 

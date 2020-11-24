@@ -117,7 +117,7 @@ body {
               filter: opacity(0.8);
               width: 256px;
               height: 256px;
-              border-radius: 26px;
+              border-radius: 10% 0;
               object-fit: contain;
 
               @media (min-width: 851px) {

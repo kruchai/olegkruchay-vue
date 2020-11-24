@@ -3,11 +3,16 @@
 </template>
 
 <script>
-import ErrorComponent from '@/components/ErrorComponent'
+import ErrorComponent from '~/components/ErrorComponent'
 
 export default {
   components: { ErrorComponent },
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      required: true,
+    },
+  },
   layout: 'default',
 }
 </script>

@@ -1,13 +1,14 @@
 {
   "name": "olegkruchay-nuxt",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
+    "dev:host": "nuxt-ts --hostname '0' --port 88",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "prettier:all:vue": " prettier -w components/* layouts/* pages/*",
+    "prettier:all:vue": " prettier -w components/* layouts/* pages/* nuxt.config.js",
     "lint:all:vue": "eslint --fix components/*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",

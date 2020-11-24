@@ -1,5 +1,7 @@
 <template>
-  <Contacts />
+  <main class="ok-page page--contacts">
+    <Contacts />
+  </main>
 </template>
 
 <script>
@@ -18,6 +20,9 @@ export default {
     return {
       title: seo.contacts.title,
     }
+  },
+  transition: {
+    name: 'intro',
   },
 }
 </script>

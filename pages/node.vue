@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import ErrorComponent from '@/components/ErrorComponent'
-import { errors } from '@/static/data/errors.json'
+import ErrorComponent from '~/components/ErrorComponent'
+import { errors } from '~/static/data/errors.json'
 
 export default {
   components: { ErrorComponent },

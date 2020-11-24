@@ -1,5 +1,7 @@
 <template>
-  <AboutMe />
+  <main class="ok-page page--about">
+    <AboutMe />
+  </main>
 </template>
 
 <script>
@@ -18,6 +20,9 @@ export default {
     return {
       title: seo.aboutMe.title,
     }
+  },
+  transition: {
+    name: 'intro',
   },
 }
 </script>
