@@ -1,7 +1,11 @@
 // page
 .ok-page {
-  display: flex;
-  align-items: center;
+  &.page--home,
+  &.page--about,
+  &.page--error {
+    display: flex;
+    align-items: center;
+  }
 }
 
 // main
@@ -12,6 +16,7 @@
   grid-template-areas: '. first first first first first first first first .';
   align-items: center;
   padding: 50px 0;
+  width: 100%;
 
   @media (min-width: 1200px) {
     grid-template-areas: '. . . first first first first . . .';
