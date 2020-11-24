@@ -1,5 +1,5 @@
 <template>
-  <main class="ok-main page--home">
+  <div class="ok-main">
     <!--  Column 1  -->
     <div class="ok-column first">
       <div class="ok-title">{{ main.greeting }} &#x1F44B;</div>
@@ -21,7 +21,7 @@
           </a>
         </div>
         <div class="message-me">
-          <NuxtLink exact-active-class="ok-link-active" to="/contacts" class="ok-cta ok-link">
+          <NuxtLink exact-active-class="ok-link-active" to="/contacts" class="ok-cta">
             <span class="circle">
               <span class="icon-wrapper">
                 <span class="icon letter"></span>
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
