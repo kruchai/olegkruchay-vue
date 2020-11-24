@@ -10,9 +10,12 @@
     margin: 0;
   }
   @media (min-width: 1200px) {
+    grid-template-areas: '. . first first first first first first . .';
+  }
+  @media (min-width: 1500px) {
     grid-template-areas: '. . . first first first first . . .';
   }
-
+  
   .ok-container {
     @media (max-width: 850px) {
       > div {
