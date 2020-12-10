@@ -1,3 +1,5 @@
+import { sortRoutes } from '@nuxt/utils'
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -186,4 +188,25 @@ export default {
   },
 
   pageTransition: 'intro',
+
+  router: {
+    extendRoutes(routes) {
+      // Routes
+      routes.push({
+        path: '/admin',
+        redirect: '/about',
+      })
+      routes.push({
+        path: '/user',
+        redirect: '/about',
+      })
+      routes.push({
+        path: '/node/*',
+        redirect: '/node',
+      })
+
+      // Sorting routes
+      sortRoutes(routes)
+    },
+  },
 }
