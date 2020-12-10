@@ -9,7 +9,7 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "prettier:all:vue": " prettier -w components/* layouts/* pages/* nuxt.config.js",
-    "lint:all:vue": "eslint --fix components/*",
+    "lint:all:vue": "eslint --fix components/* pages/*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "plint:vue": "yarn lint:all:vue && yarn prettier:all:vue"
