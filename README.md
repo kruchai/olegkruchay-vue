@@ -1,8 +1,15 @@
 # ⛳️ Personal web-site | olegkruchay.com
 
-###### 🎭🎲️ Current version ```v0.7.8 ßeta```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37a8b031-d4f6-4738-b34e-afdf03257964/deploy-status)](https://app.netlify.com/sites/olegkruchay/deploys)
+
+<img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/olegscout/olegkruchay-vue/dev?label=Beta&style=flat-square"> 
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/olegscout/olegkruchay-vue?style=social">
 
 [![The NEW olegkruchay.com web-site](./static/public/promo-olegkruchay-com.gif "The NEW olegkruchay.com web-site")](https://olegkruchay.com)
+
+<img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&label=olegkruchay.com&up_color=green&up_message=online&url=https%3A%2F%2Folegkruchay.com"> 
+<img alt="npm" src="https://img.shields.io/npm/v/olegkruchay-sync?color=yellow&label=olegkruchay-sync">
+<img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/olegscout/olegkruchay-vue/dev"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/olegscout/olegkruchay-vue">
 
 ### 🔩🔧 Build Setup 
 
@@ -74,4 +81,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 
-### Hosted on [Netlify](https://netlify.com). Made by Oleg Kruchay.
+<a href="https://nuxtjs.org"><img src="https://img.shields.io/badge/Nuxt.js-527392?style=for-the-badge&logo=nuxt.js&logoColor=4FC08D"></a> 
+<a href="https://vuejs.org"><img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"></a>
+<a href="https://netlify.com"><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"></a>
+<a href="https://olegkruchay.com/about"><img src="https://img.shields.io/badge/By-OlegKruchay-5d9741?style=for-the-badge&logoColor=c1d72f"></a>
+
