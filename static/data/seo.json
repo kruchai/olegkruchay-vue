@@ -12,6 +12,12 @@
     "error": {
       "title": "Error"
     },
+    "hub": {
+      "title": "Hub of Oleg's projects 👨🏻‍💻 🛠"
+    },
+    "minesweeper": {
+      "title": "Minesweeper on VueJS 💣 🎲"
+    },
     "meta": [
       { "charset": "utf-8" },
       { "name": "viewport", "content": "width=device-width, initial-scale=1" },
