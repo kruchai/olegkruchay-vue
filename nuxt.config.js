@@ -11,6 +11,12 @@ export default {
       // Reference for Drupal
       { name: 'generator', content: 'Drupal 10 (http://drupal.org)' },
       {
+        name: 'keywords',
+        content:
+          'oleg kruchay, oleh kruchai, олег кручай, fe, frontend, front-end, dev, developer, github, web-developer, ukraine, drupal, drupal8, drupal9',
+      },
+      { name: 'author', content: 'Oleg Kruchay' },
+      {
         hid: 'description',
         name: 'description',
         // eslint-disable-next-line max-len
