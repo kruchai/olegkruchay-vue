@@ -26,7 +26,27 @@
       "location": "remote",
       "company": {
         "name": "Kairos Tech.",
-        "webSite": "https://kairostech.no."
+        "webSite": "https://www.kairostech.no"
+      },
+      "startDate": {
+        "month": "Jun",
+        "mo": "6",
+        "year": "2020"
+      },
+      "endDate": {
+        "present": false,
+        "month": "Aug",
+        "mo": "8",
+        "year": "2020"
+      }
+    },
+    {
+      "position": "Senior Front-end developer",
+      "mainStackTech": "ReactJS",
+      "location": "remote",
+      "company": {
+        "name": "Ars Data",
+        "webSite": "https://arsdata.io/"
       },
       "startDate": {
         "month": "Jun",
