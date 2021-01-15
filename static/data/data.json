@@ -5,8 +5,9 @@
     "status": "βeta"
   },
   "main": {
-    "greeting": "Hello, I'm Oleg",
+    "greeting": "Hohoho, I'm Oleg 🎅",
     "message": "I create modern web applications",
+    "specialMessage": "Happy 2021 and Merry Xmas \uD83C\uDF84",
     "cvLink": {
       "cvLinkUri": "/cv.pdf",
       "cvLinkTitle": "Download my cv"
