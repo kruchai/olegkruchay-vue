@@ -123,6 +123,7 @@ export default {
         },
       },
     ],
+    '@nuxtjs/color-mode',
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -214,5 +215,16 @@ export default {
       // Sorting routes
       sortRoutes(routes)
     },
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'dark',
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode',
   },
 }
