@@ -4,7 +4,7 @@
     <div class="ok-column first">
       <div class="ok-title">{{ main.greeting }} &#x1F44B;</div>
       <div class="ok-heading">
-        {{ main.message }}
+        {{ main.specialMessage }}
       </div>
 
       <div class="ok-container col-2">
