@@ -1,7 +1,7 @@
 // container
 .container {
   display: grid;
-  grid-template-rows: 100px auto 320px;
+  grid-template-rows: 100px auto 200px;
   overflow-x: hidden;
   z-index: 1;
   position: relative;
@@ -24,6 +24,12 @@
   animation-duration: 2s;
   opacity: 0.3;
   z-index: 2;
+}
+
+.dark-mode {
+  .line {
+    border-right: 1px solid rgba(186, 186, 186, 0.3);
+  }
 }
 
 .line {
