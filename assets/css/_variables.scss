@@ -6,5 +6,14 @@ $grey-light: #999;
 $grey-middle: #777;
 $grey-lines: rgba(186, 186, 186, 0.5);
 $grey-main-cta: #555;
-$main: #f08080;
+$pink: #f08080;
+$mint: #2abfbf;
 $background-color: $white;
+
+:root {
+  --main-color: #f08080;
+}
+
+.dark-mode {
+  --main-color: #2abfbf;
+}

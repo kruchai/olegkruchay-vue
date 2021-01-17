@@ -8,11 +8,11 @@ a {
         animation: heartbeat 1s infinite;
 
         @media (min-width: 851px) {
-          background: $main;
+          background: var(--main-color);
         }
 
         .logo-main-word {
-          fill: $main;
+          fill: var(--main-color);
 
           @media (min-width: 851px) {
             fill: $white;

@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 'first second second third third third third fourth fourth .';
+    grid-template-areas: 'first second second third third third third fourth fourth fifth';
     position: relative;
     align-items: center;
   }
@@ -25,6 +25,7 @@
 
       @media (max-width: 850px) {
         order: 3;
+        font-size: 12px;
       }
     }
 
@@ -73,7 +74,7 @@
           .license-icons {
             @media (max-width: 1199px) {
               svg {
-                margin: 0 10px;
+                margin: 0 3px;
               }
             }
           }
@@ -129,6 +130,11 @@
         }
       }
     }
+
+    &.fifth {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .brand-name {
@@ -152,6 +158,27 @@
 
       @media (min-width: 851px) {
         max-width: 80vw;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    &.mobile-hide {
+      .ok-column {
+        &.first {
+          display: none;
+        }
+        &.third {
+          .ok-description {
+            display: none;
+          }
+
+          .license {
+            .ok-link {
+              font-size: 15px;
+            }
+          }
+        }
       }
     }
   }

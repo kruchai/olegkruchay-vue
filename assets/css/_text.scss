@@ -32,7 +32,7 @@
       height: 40px;
       width: 1px;
       left: 50%;
-      background-color: #f08080;
+      background-color: var(--main-color);
 
       // tweak
       transform: translateX(calc(-50% - 0.5px));
@@ -63,7 +63,7 @@
     font-size: 65px;
   }
   @media (min-width: 1200px) {
-    font-size: 75px;
+    font-size: 72px;
   }
 }
 
