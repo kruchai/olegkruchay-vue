@@ -2,7 +2,7 @@
   <div class="ok-main">
     <!--  Column 1  -->
     <div class="ok-column first">
-      <div class="ok-title">{{ main.greeting }} &#x1F44B;</div>
+      <div class="ok-title">{{ main.greeting }}</div>
       <div class="ok-heading">
         {{ main.specialMessage }}
       </div>
