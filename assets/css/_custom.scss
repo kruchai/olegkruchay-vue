@@ -1,22 +1,37 @@
 * {
   box-sizing: border-box;
+
   &::before,
   &::after {
     box-sizing: border-box;
   }
 }
 
+:root {
+ /* both supported */
+}
+
 ::selection {
-  background: $main; /* WebKit/Blink Browsers */
-  color: $white;
+  color: var(--main-color);
 }
 
 ::-moz-selection {
-  background: $main; /* Gecko Browsers */
-  color: $white;
+  color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
 }
 
 body {
+  //overscroll-behavior: none; /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
   margin: 0;
   font-family: 'Comfortaa', cursive;
   background: $background-color;
