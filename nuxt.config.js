@@ -11,6 +11,12 @@ export default {
       // Reference for Drupal
       { name: 'generator', content: 'Drupal 10 (http://drupal.org)' },
       {
+        name: 'keywords',
+        content:
+          'oleg kruchay, oleh kruchai, олег кручай, fe, frontend, front-end, dev, developer, github, web-developer, ukraine, drupal, drupal8, drupal9',
+      },
+      { name: 'author', content: 'Oleg Kruchay' },
+      {
         hid: 'description',
         name: 'description',
         // eslint-disable-next-line max-len
@@ -117,6 +123,7 @@ export default {
         },
       },
     ],
+    '@nuxtjs/color-mode',
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -208,5 +215,16 @@ export default {
       // Sorting routes
       sortRoutes(routes)
     },
+  },
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode',
   },
 }

@@ -1,5 +1,5 @@
 <template>
-  <footer class="ok-footer">
+  <footer class="ok-footer mobile-hide">
     <!--  Column 1  -->
     <div class="ok-column first text-center">
       <span>{{ site.prefix + site.version }}</span>
@@ -42,6 +42,10 @@
         </a>
       </div>
     </div>
+    <!--  Column 5  -->
+    <div class="ok-column fifth text-center">
+      <ColorModeSwitcher />
+    </div>
 
     <!--  Absolute section  -->
     <div class="brand-name">
@@ -54,11 +58,12 @@
 import { license } from 'olegkruchay-sync/static/data/license.json'
 import { footer } from 'olegkruchay-sync/static/data/footer.json'
 import FooterLogo from 'olegkruchay-sync/assets/images/logo-full.svg?inline'
+import ColorModeSwitcher from '@/components/ColorModeSwitcher'
 import { site } from '~/static/data/data.json'
 
 export default {
   name: 'Footer',
-  components: { FooterLogo },
+  components: { ColorModeSwitcher, FooterLogo },
   data() {
     return {
       site,

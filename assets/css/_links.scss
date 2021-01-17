@@ -51,7 +51,7 @@
     &:after {
       content: '';
       width: calc(100% - 15px);
-      background-color: $main;
+      background-color: var(--main-color);
     }
   }
 
@@ -100,7 +100,7 @@
       .circle {
         &:before {
           width: 100%;
-          background-color: $main;
+          background-color: var(--main-color);
         }
 
         .button-text {
@@ -249,6 +249,7 @@
 
       .button-text {
         color: $white;
+        transition: none;
       }
     }
 

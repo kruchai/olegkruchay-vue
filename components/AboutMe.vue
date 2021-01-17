@@ -30,7 +30,10 @@
               aboutMe.preStory.currectCompany.name
             }}</a>
             <span>{{
-              'on their ' + aboutMe.preStory.currectCompany.techStack + ' projects in sunny'
+              'on their ' +
+              aboutMe.preStory.currectCompany.techStack +
+              ' projects in ' +
+              aboutMe.weatherNearby
             }}</span>
             <span>{{ aboutMe.location }}</span>
           </h1>

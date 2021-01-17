@@ -1,0 +1,55 @@
+.ok-mode-switcher {
+  font-size: 30px;
+}
+
+.dark-mode {
+  body {
+    background: linear-gradient(to right, #121212, #212121);
+    color: #fff !important;
+  }
+
+  picture {
+    filter: brightness(.8) contrast(1.1);
+  }
+
+  .ok-link {
+    &.active {
+      background: linear-gradient(to right, #212121, #121212);
+    }
+  }
+
+  .logo {
+    svg {
+      fill: #777;
+
+      .logo-main-border {
+        fill: #333;
+      }
+    }
+  }
+
+  .brand-name {
+    svg {
+      fill: #333;
+    }
+  }
+
+  .ok-box.bg,
+  .career--items {
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 2.42%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
+  .ok-column {
+    color: #aaa;
+  }
+
+  .ok-cta {
+    .button-text {
+      color: #777;
+    }
+  }
+
+  .social {
+    color: #777;
+  }
+}

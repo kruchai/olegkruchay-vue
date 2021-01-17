@@ -23,10 +23,30 @@
     {
       "position": "Senior Front-end developer",
       "mainStackTech": "ReactJS",
-      "location": "remote",
+      "location": "remote / Norway",
       "company": {
         "name": "Kairos Tech.",
-        "webSite": "https://kairostech.no."
+        "webSite": "https://www.kairostech.no"
+      },
+      "startDate": {
+        "month": "Jun",
+        "mo": "6",
+        "year": "2020"
+      },
+      "endDate": {
+        "present": false,
+        "month": "Aug",
+        "mo": "8",
+        "year": "2020"
+      }
+    },
+    {
+      "position": "Senior Front-end developer",
+      "mainStackTech": "ReactJS",
+      "location": "remote / Ukraine",
+      "company": {
+        "name": "Ars Data",
+        "webSite": "https://arsdata.io/"
       },
       "startDate": {
         "month": "Jun",
@@ -43,7 +63,7 @@
     {
       "position": "Head of Front-end",
       "mainStackTech": "Drupal 7-9",
-      "location": "remote",
+      "location": "remote / Ukraine",
       "company": {
         "name": "Edna",
         "webSite": "https://edna.ua"
@@ -101,7 +121,7 @@
       }
     },
     {
-      "position": "Junior full-stack developer",
+      "position": "Junior Full-stack developer",
       "mainStackTech": "Drupal 7",
       "role": "First met with real web-site developing workflow. Also worked at Drudesk company.",
       "location": "Lutsk, Ukraine",
