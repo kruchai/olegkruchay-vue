@@ -37,6 +37,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Using the [olegkruchay-sync](https://classic.yarnpkg.com/en/package/olegkruchay-sync) NPM package for syncronizing reusable components/data between PET-projects
 - 10-section based CSS Grid
 - NuxtJS / VueJS Transitions
+- Day/night mode
 - SSR
 - Error pages
 - Drupal error pages relations
@@ -44,6 +45,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
     
 #### 🧨 Major updates 
+- Day/night mode
+    - starts from version ```v0.8```
 - [olegkruchay-sync](https://classic.yarnpkg.com/en/package/olegkruchay-sync) NPM package
     - starts from version ```v0.7.7```
 - Main pages: Home, About, Contacts
@@ -53,7 +56,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### 💣 Features in future 
 
-- Day/night mode
+- special label for 5 years of experience
 - custom cursor
 - new page sections related to my experience and portfolio
 - certificates on the site.
