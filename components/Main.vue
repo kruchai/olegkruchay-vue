@@ -4,7 +4,7 @@
     <div class="ok-column first">
       <div class="ok-title">{{ main.greeting }}</div>
       <div class="ok-heading">
-        {{ main.specialMessage }}
+        {{ main.message }}
       </div>
 
       <div class="ok-container col-2">
