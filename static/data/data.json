@@ -1,11 +1,12 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.8",
+    "version": "0.8.1",
     "status": "βeta"
   },
   "main": {
-    "greeting": "Hohoho, I'm Oleg 🎅",
+    "greeting": "Hello, I'm Oleg 👋",
+    "specialGreeting": "Hohoho, I'm Oleg 🎅",
     "message": "I create modern web applications",
     "specialMessage": "Happy 2021 and Merry Xmas \uD83C\uDF84",
     "cvLink": {
