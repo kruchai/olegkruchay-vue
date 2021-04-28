@@ -33,9 +33,10 @@
     }
 
     @media (max-width: 849px) {
-      bottom: 0;
-      right: -5vw;
-      width: 25vw;
+      top: 70px;
+      width: 30vw;
+      right: -15vw;
+      transform: translateX(-50%);
     }
 
     @media (min-width: 850px) {
