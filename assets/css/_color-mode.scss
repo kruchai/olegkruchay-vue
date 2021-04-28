@@ -3,6 +3,8 @@
 }
 
 .dark-mode {
+  background: #212121;
+
   body {
     background: linear-gradient(to right, #121212, #212121);
     color: #fff !important;
@@ -51,5 +53,21 @@
 
   .social {
     color: #777;
+  }
+
+  .ok-main {
+    .ok-anniversary {
+      path {
+        fill: #aaa !important;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        path {
+          fill: var(--main-color) !important;
+        }
+      }
+    }
   }
 }

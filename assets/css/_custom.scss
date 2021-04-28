@@ -7,10 +7,6 @@
   }
 }
 
-:root {
- /* both supported */
-}
-
 ::selection {
   color: var(--main-color);
 }
@@ -33,7 +29,7 @@ body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
   margin: 0;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', monospace;
   background: $background-color;
 }
 
