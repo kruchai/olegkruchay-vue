@@ -58,7 +58,9 @@
   .ok-main {
     .ok-anniversary {
       path {
-        fill: #aaa !important;
+        @media (min-width: 850px) {
+          fill: #aaa !important;
+        }
       }
 
       &:hover {
