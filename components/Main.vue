@@ -6,7 +6,6 @@
       <div class="ok-heading">
         {{ main.message }}
       </div>
-
       <div class="ok-container col-2">
         <div class="download-cv">
           <a :href="main.cvLink.cvLinkUri" class="ok-cta">
@@ -34,14 +33,20 @@
         </div>
       </div>
     </div>
+    <!--  Column 2  -->
+    <div class="ok-column second">
+      <AnniversarySvg class="ok-anniversary" />
+    </div>
   </div>
 </template>
 
 <script>
 import { main } from '~/static/data/data.json'
+import AnniversarySvg from '~/assets/images/five-years-anniversary.svg?inline'
 
 export default {
   name: 'Main',
+  components: { AnniversarySvg },
   data() {
     return {
       main,
