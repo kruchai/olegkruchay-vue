@@ -1,13 +1,13 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.8.1",
+    "version": "0.8.2",
     "status": "βeta"
   },
   "main": {
-    "greeting": "Hello, I'm Oleg 👋",
+    "greeting": "Hi there 🚀",
     "specialGreeting": "Hohoho, I'm Oleg 🎅",
-    "message": "I create modern web applications",
+    "message": "I'm running the code for 🖐 years in a row",
     "specialMessage": "Happy 2021 and Merry Xmas \uD83C\uDF84",
     "cvLink": {
       "cvLinkUri": "/resume.pdf",

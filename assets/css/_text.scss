@@ -1,5 +1,5 @@
 .ok-title {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', monospace;
   font-weight: 300;
   font-size: 30px;
   margin-bottom: 25px;
@@ -41,7 +41,7 @@
 }
 
 .ok-title--bold-sm {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', monospace;
   font-weight: 700;
   line-height: 1.5;
   font-size: 24px;
@@ -56,7 +56,7 @@
 .ok-heading {
   font-size: 45px;
   font-weight: bold;
-  font-family: 'Patua One', cursive;
+  font-family: 'Patua One', serif;
   line-height: 0.9;
 
   @media (min-width: 851px) {

@@ -153,23 +153,11 @@ export default {
         download: true,
       },
     ],
-    'nuxt-webfontloader',
     '@nuxtjs/robots',
     'nuxt-clipboard2',
     '@aceforth/nuxt-optimized-images',
     '@nuxtjs/svg',
   ],
-
-  webfontloader: {
-    google: {
-      families: [
-        'Niconne&display=swap',
-        'Righteous&display=swap',
-        'Patua+One&display=swap',
-        'Comfortaa:300,400,700&display=swap',
-      ],
-    },
-  },
 
   optimizedImages: {
     inlineImageLimit: -1,
