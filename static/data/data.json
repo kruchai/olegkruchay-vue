@@ -1,7 +1,7 @@
 {
   "site": {
     "prefix": "v",
-    "version": "0.8.2",
+    "version": "0.9",
     "status": "βeta"
   },
   "main": {
