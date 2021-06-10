@@ -1,6 +1,6 @@
 <template>
   <ErrorComponent
-    :statusCode="errors.node.code"
+    :status-code="errors.node.code"
     :heading="errors.node.heading"
     :description="errors.node.description"
   />

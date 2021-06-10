@@ -1,7 +1,7 @@
 <template>
   <div class="ok-section--main extra-section">
     <div class="ok-column first">
-      <h3 class="ok-title section">{{ aboutMe.title }}</h3>
+      <h3 v-if="title" class="ok-title section">{{ title }}</h3>
       <div class="ok-container col-2">
         <div class="ok-column first">
           <figure class="picture">
@@ -25,23 +25,23 @@
         </div>
         <div class="ok-column second">
           <h1 class="about--pre ok-title--bold-sm">
-            <span class="">{{ aboutMe.preStory.greeting }}</span>
-            <a class="ok-link" :href="aboutMe.preStory.currectCompany.uri">{{
-              aboutMe.preStory.currectCompany.name
-            }}</a>
-            <span>{{
-              'on their ' +
-              aboutMe.preStory.currectCompany.techStack +
-              ' projects in ' +
-              aboutMe.weatherNearby
+            <span v-if="greeting">{{ greeting }}</span>
+            <a
+              v-if="currectCompanyUri && currectCompanyName"
+              class="ok-link"
+              :href="currectCompanyUri"
+              >{{ currectCompanyName }}</a
+            >
+            <span v-if="weather && techStack">{{
+              'on their ' + techStack + ' projects in ' + weather
             }}</span>
-            <span>{{ aboutMe.location }}</span>
+            <span v-if="location">{{ location }}</span>
           </h1>
-          <div class="about--story ok-text">{{ aboutMe.story }}</div>
+          <div v-if="story" class="about--story ok-text">{{ story }}</div>
         </div>
       </div>
 
-      <h2 class="ok-title section">{{ 'Professional Skills' }}</h2>
+      <h2 v-if="skillsTitle" class="ok-title section">{{ skillsTitle }}</h2>
       <div class="ok-box wrapper-social">
         <span v-for="(skill, i) in aboutMe.pofessionalSkills" :key="i" class="tooltip">
           <fa :class="'social ' + skill.class" :icon="skill.faIcon" />
@@ -51,7 +51,7 @@
         </span>
       </div>
 
-      <h2 class="ok-title section">{{ 'Career' }}</h2>
+      <h2 v-if="careerTitle" class="ok-title section">{{ careerTitle }}</h2>
       <div class="ok-box">
         <div class="career--items">
           <div v-for="(item, i) in career" :key="i" class="career--item">
@@ -79,6 +79,48 @@ import { career } from '~/static/data/career.json'
 
 export default {
   name: 'AboutMe',
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    skillsTitle: {
+      type: String,
+      required: true,
+    },
+    careerTitle: {
+      type: String,
+      required: true,
+    },
+    location: {
+      type: String,
+      required: true,
+    },
+    weather: {
+      type: String,
+      required: true,
+    },
+    greeting: {
+      type: String,
+      required: true,
+    },
+    currentCompanyUri: {
+      type: String,
+      required: true,
+    },
+    currentCompanyName: {
+      type: String,
+      required: true,
+    },
+    techStack: {
+      type: String,
+      required: true,
+    },
+    story: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       aboutMe,

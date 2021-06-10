@@ -157,6 +157,7 @@ export default {
     'nuxt-clipboard2',
     '@aceforth/nuxt-optimized-images',
     '@nuxtjs/svg',
+    '@nuxtjs/axios',
   ],
 
   optimizedImages: {

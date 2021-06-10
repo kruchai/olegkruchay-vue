@@ -21,6 +21,12 @@
     "original": {
       "title": "Original olegkruchay.com web-site."
     },
+    "api": {
+      "title": "API of olegkruchay.com web-site ℹ️"
+    },
+    "data": {
+      "title": "The API data of olegkruchay.com web-site ℹ️"
+    },
     "meta": [
       { "charset": "utf-8" },
       { "name": "viewport", "content": "width=device-width, initial-scale=1" },
