@@ -1,6 +1,6 @@
 <template>
   <main class="ok-page page--home">
-    <Main />
+    <Main :greeting="content.home.greeting" :message="content.home.message" />
   </main>
 </template>
 
@@ -11,6 +11,12 @@ import { seo } from '~/static/data/seo'
 
 export default Vue.extend({
   components: { Main },
+  async asyncData({ $axios }) {
+    const content = await $axios.$get(
+      'https://script.google.com/macros/s/AKfycbw_Wn7WgRVr7NtGe58b_Dr1j_pciXlVikYfnpfo0PmUwxXegyLSRknglf6Q_Z-I3QMxEA/exec'
+    )
+    return { content }
+  },
   data() {
     return {
       seo,
