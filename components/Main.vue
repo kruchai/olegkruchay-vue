@@ -2,9 +2,11 @@
   <div class="ok-main">
     <!--  Column 1  -->
     <div class="ok-column first">
-      <div class="ok-title">{{ main.greeting }}</div>
-      <div class="ok-heading">
-        {{ main.message }}
+      <div v-if="greeting" class="ok-title">
+        {{ greeting }}
+      </div>
+      <div v-if="message" class="ok-heading">
+        {{ message }}
       </div>
       <div class="ok-container col-2">
         <div class="download-cv">
@@ -47,10 +49,24 @@ import AnniversarySvg from '~/assets/images/five-years-anniversary.svg?inline'
 export default {
   name: 'Main',
   components: { AnniversarySvg },
+  props: {
+    greeting: {
+      type: String,
+      required: true,
+    },
+    message: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       main,
     }
+  },
+  computed: {
+    console: () => console,
+    window: () => window,
   },
 }
 </script>
