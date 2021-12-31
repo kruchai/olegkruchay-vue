@@ -1,5 +1,9 @@
 .ok-mode-switcher {
   font-size: 30px;
+
+  @media (min-width: 1200px) {
+    cursor: pointer;
+  }
 }
 
 .dark-mode {

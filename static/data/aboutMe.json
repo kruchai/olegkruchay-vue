@@ -1,21 +1,21 @@
 {
   "aboutMe": {
     "title": "About Me",
-    "availabilityStatus": "not able",
+    "availabilityStatus": "available",
     "portraitPhoto": {
       "alt": "Oleg Kruchay portrait",
       "image": "ok.jpg"
     },
     "preStory": {
-      "greeting": "I'm Oleg [aka Scout], 24 y.o. front-end web developer working remotely for",
+      "greeting": "I'm Oleg [aka Scout], 25 y.o. front-end web developer working remotely for",
       "currectCompany": {
-        "name": "Sceel.io",
-        "uri": "https://sceel.io",
-        "techStack": "Drupal 9 / ReactJS"
+        "name": "Github",
+        "uri": "https://github.com/olegscout",
+        "techStack": "NuxtJS (VueJS) / React Native / ReactJS"
       }
     },
     "story": "I have been working as a web developer since 2016 when I was a 3rd-year student. In 2018 I graduated with a Master's degree in Computer Science specialty. My passion is creating and integrating design solutions into the site.",
-    "weatherNearby": "sunny 🏖",
+    "weatherNearby": "snowy ❄️ ☃️ 🎄",
     "location": "Kyiv, Ukraine 🇺🇦",
     "pofessionalSkills": [
       {
